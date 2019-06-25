@@ -1,0 +1,162 @@
+#!/bin/bash
+
+# 2010.11.01 dph  -  v1.3.0
+#  added symlink for mtl1 file, now required by ciao 4.3.
+
+# 2008.08.05   version 1.2
+#  Arik's mods for interleaved mode.
+
+# 2008.08.01 - v1.1.1
+#  switch to bash, since no pushd in sh on solaris.
+
+
+# 2007.10.18 dph  add conditional tests for file existence.
+#                 Issue warning for missing files.
+#                 No test for hrc-only or acis-only files.
+
+# 2007.08.08 dph
+
+### link archive distribution files to generic names for use by
+### processing scripts.
+
+#
+# USAGE:  setup_obsdir d1[ d2[ d3[...]]]
+# EXAMPLES:  
+# setup_obsdir .
+# setup_obsdir Data/obs_5482 Data/obs_6282
+#
+
+for i in $*
+
+  do 
+
+  echo $i ..............
+
+  pushd $i
+
+  gunzip primary/*.gz secondary/*.gz
+
+  #
+  # check for interleave mode. Occurs when there
+  # is *e1_evt1.fits file
+  #
+  predir="."
+  rootdir="."
+  interleave=0
+
+  if [ -e secondary/*e1_evt1.fits ] ; then
+      echo "INFO: Interleave mode detected..."
+      i=`echo $i | sed 's/\/$//'`
+      mkdir ${i}_e1 ${i}_e2
+      predir="${i}_e1 ${i}_e2"
+      rootdir=".."
+      interleave=1
+      iter=1
+  fi
+
+  for subdir in $predir
+  
+  do
+    
+    if [ $interleave -eq 1 ] ; then
+	ifix=e${iter}_
+    else
+	ifix=""
+    fi
+    subdir=$subdir/
+    
+    pushd $subdir
+    
+    if [ -e ${rootdir}/secondary/*${ifix}evt1.fits ] ;   then
+	ln -s ${rootdir}/secondary/*${ifix}evt1.fits  evt0
+    else
+	echo 'WARNING: no evt1 file!'
+	exit 1
+    fi
+
+    if [ -e ${rootdir}/secondary/*${ifix}flt1.fits ];   then
+	ln -s ${rootdir}/secondary/*${ifix}flt1.fits  flt1
+    else
+	echo 'WARNING: no flt1 file!'      
+    fi
+
+    if [ -e ${rootdir}/secondary/*${ifix}mtl1.fits ];   then
+	ln -s ${rootdir}/secondary/*${ifix}mtl1.fits  mtl1
+    else
+	echo 'WARNING: no mtl1 file!'      
+    fi
+
+    
+    # only for acis
+    #
+    if [ -e ${rootdir}/secondary/*${ifix}stat1.fits ] ;   then
+	ln -s ${rootdir}/secondary/*${ifix}stat1.fits stat1
+    fi   
+
+    if [ -e ${rootdir}/secondary/*${ifix}msk1.fits ] ;   then
+	ln -s ${rootdir}/secondary/*${ifix}msk1.fits  msk1
+    else
+	echo 'WARNING: no msk1 file!'
+    fi
+    
+
+    # NOTE: bpix1 is in primary for acis, secondary for hrc:
+    #
+    if [ -e stat1 ] ; then
+	if [ -e ${rootdir}/primary/*${ifix}bpix1.fits ] ;   then
+	    ln -s ${rootdir}/primary/*${ifix}bpix1.fits  bpix1
+	else
+	    echo 'WARNING: no bpix1 file!'
+	fi
+    elif [ -e ${rootdir}/secondary/*${ifix}bpix1.fits ] ;   then
+	ln -s ${rootdir}/secondary/*${ifix}bpix1.fits  bpix1
+    else
+	echo 'WARNING: no bpix1 file!'
+    fi
+    
+    # only for acis:
+    #
+    if [ -e stat1 ] ; then 
+	if [ -e ${rootdir}/secondary/*pbk0.fits ] ;   then
+	    ln -s ${rootdir}/secondary/*pbk0.fits  pbk0
+	else
+	    echo 'WARNING: no pbk0 file!'
+	    exit 1
+	fi
+    fi
+    
+    
+    # only for hrc:
+    #
+    if [ ! -e stat1 ] ; then 
+	if [ -e ${rootdir}/primary/*${ifix}dtf1.fits ] ;   then
+	    ln -s ${rootdir}/primary/*${ifix}dtf1.fits dtf1
+	else
+	    echo 'WARNING: no dtf1 file found!'
+	fi
+    fi
+
+    # should have test for asol files...
+    #
+    k=1
+    for j in ${rootdir}/primary/*_asol1.fits
+      do 
+      ln -s $j asol_$k
+      let "k += 1"
+    done
+    
+    ls asol_* > asol.list
+
+    popd
+
+    iter=$(($iter + 1))
+
+  done
+
+  popd 
+
+  echo ''
+
+done
+
+exit 0

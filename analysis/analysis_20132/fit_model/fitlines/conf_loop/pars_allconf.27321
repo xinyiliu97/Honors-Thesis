@@ -1,0 +1,15 @@
+
+redshift(1) * redshift(2) * sigma(1) * sigma(2) * wabs(1) * ( rest_wave(1) * rest_wave(2) * rest_wave(3) * rest_wave(4) * rest_wave(5) * rest_wave(6) * rest_wave(7) * rest_wave(8) * rest_wave(9) *  rest_wave(10) * rest_wave(11) * rest_wave(12) * rest_wave(13) * rest_wave(14) * rest_wave(15) * rest_wave(16)) * ( powerlaw(1) + gauss(1) + gauss(2) + gauss(3) + gauss(4) +  gauss(5) + gauss(6) + gauss(7) + gauss(8) + gauss(9) + gauss(10) + gauss(11) + gauss(12) + gauss(13) + gauss(14) + gauss(15) + gauss(16))
+
+TRIES   PAR#      P_VALUE        P_MIN        P_MAX  TIME 
+
+ chi^2 = 2.0848e+03,  DoF =  1651, time = Tue Nov 27 17:09:32 2018  (conf_loop/pars_allpar.27321)
+ 
+    1      4   5.6635e-03   4.8224e-03   6.3885e-03  Tue Nov 27 17:15:14 2018
+    1     36   1.1343e-04   9.7010e-05   1.3193e-04  Tue Nov 27 17:21:35 2018
+
+ chi^2 = 2.0847e+03,  DoF =  1651, time = Tue Nov 27 17:24:28 2018  (conf_loop/pars_allpar.27321)
+ 
+    1      3   3.4009e-03   3.0275e-03   3.8183e-03  Tue Nov 27 17:29:46 2018
+    1     30   5.7958e-05   1.9909e-05   1.0380e-04  Tue Nov 27 17:36:25 2018
+    1     48   6.7436e-04   5.3423e-04   1.0000e-03  Tue Nov 27 17:42:11 2018

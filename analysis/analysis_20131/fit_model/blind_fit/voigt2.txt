@@ -1,0 +1,29 @@
+wabs(1)*Powerlaw(1)+voigt(1)+voigt(2)+voigt(3)+voigt(4)+voigt(5)+voigt(6)
+ idx  param          tie-to  freeze         value         min         max
+  1  wabs(1).nH          0     1              0.5           0      100000  10^22
+  2  Powerlaw(1).norm    0     0       0.02097434       1e-08       1e+08  
+  3  Powerlaw(1).alpha   0     0        -2.348333          -5           3  
+  4  voigt(1).norm       0     1     0.0002128265      0.0001       0.002  
+  5  voigt(1).LineE      0     1         1.935713    1.928986    1.945591  keV
+  6  voigt(1).Sigma      0     1            0.001           0          10  keV
+  7  voigt(1).Gamma      0     1       0.01090232        0.01        0.04  keV
+  8  voigt(2).norm       0     1     5.377102e-05       5e-05       0.001  
+  9  voigt(2).LineE      0     1         1.853969    1.842613    1.858475  keV
+ 10  voigt(2).Sigma      0     1            0.001           0          10  keV
+ 11  voigt(2).Gamma      7     1       0.01090232        0.01        0.04  keV
+ 12  voigt(3).norm       0     1     2.000018e-05       2e-05      0.0004  
+ 13  voigt(3).LineE      0     1         1.811088    1.807542    1.823102  keV
+ 14  voigt(3).Sigma      0     1            0.001           0          10  keV
+ 15  voigt(3).Gamma      7     1       0.01090232        0.01        0.04  keV
+ 16  voigt(4).norm       0     1     8.023373e-05     7.5e-05      0.0015  
+ 17  voigt(4).LineE      0     1          1.80116    1.789204    1.804606  keV
+ 18  voigt(4).Sigma      0     1            0.001           0          10  keV
+ 19  voigt(4).Gamma      7     1       0.01090232        0.01        0.04  keV
+ 20  voigt(5).norm       0     1      5.00073e-05       5e-05       0.001  
+ 21  voigt(5).LineE      0     1         1.793778    1.778892    1.794205  keV
+ 22  voigt(5).Sigma      0     1            0.001           0          10  keV
+ 23  voigt(5).Gamma      7     1       0.01090232        0.01        0.04  keV
+ 24  voigt(6).norm       0     0     1.250012e-05    1.25e-05     0.00025  
+ 25  voigt(6).LineE      0     0          1.73421     1.71943    1.734232  keV
+ 26  voigt(6).Sigma      0     1            0.001           0          10  keV
+ 27  voigt(6).Gamma      7     1       0.01090232        0.01        0.04  keV

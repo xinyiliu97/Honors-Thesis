@@ -1,0 +1,69 @@
+%latex code 11/2
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapters/Figures/}
+    \caption{Unfitted lines with set parameters of the first four lines}
+    \label{fig:my_label}
+\end{figure}
+
+The first four lines are S14, Mg12, Ne10, and S15, based on the red shift value 0.0089\\
+S14 should have an emission at 6.237 A\\
+Mg12 should have a line at 8.49 A\\
+Ne10 should have a line at 12.24 A\\
+S15 should have a line at 5.1 \AA \\
+See Fig.~\ref{f:first4.1} and Fig.~\ref{f:first4.2}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapters/Figures/four_lines_heg.png}
+    \caption{The fitted lines for the first four elements}
+    \label{f:first4.1}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1\linewidth]{Chapters/Figures/}
+    \caption{The fitted lines for the first four elements}
+    \label{f:first4.2}
+\end{figure}
+
+
+
+\newpage
+The fifth group of lines are Si13r, Si13i, and Si13f based on the red shift value 0.0089.\\
+Si13r should have a line at 6.69 A.\\
+Si13i should have a line at 6.6865 A.\\
+Si13f should have a line at 6.8 A.\\
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.8\linewidth]{Chapters/Figures/five_lines_fitted.png}
+    \caption{The fitted lines for the first five elements}
+    \label{fig:my_label}
+\end{figure}
+
+
+The sixth and seventh lines are Fe25 and Fe26. Now we are using the second red shift value 0.068. \\
+Fe25 should have a line at 1.98 A.\\
+Fe26 should have a line at 1.89 A.\\
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.7\linewidth]{Chapters/Figures/seven_lines_fitted.png}
+    \caption{The fitted lines for the first seven elements}
+    \label{fig:my_label}
+\end{figure}
+
+
+The eighth group of lines is Mg11r, Mg11i, and Mg11f. And we are using the first red shift value 0.0089\\
+Mg11r should have a line at 9.25 A.\\
+Mg11i should have a line at 9.312 A.\\
+Mg11f should have a line at 9.397 A.\\
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=.7\linewidth]{Chapters/Figures/eight_lines_fitted.png}
+    \caption{The fitted lines for eight elements}
+    \label{fig:my_label}
+\end{figure}

@@ -1,0 +1,34 @@
+
+redshift(1) * redshift(2) * sigma(1) * sigma(2) * wabs(1) * ( rest_wave(1) * rest_wave(2) * rest_wave(3) * rest_wave(4) * rest_wave(5) * rest_wave(6) * rest_wave(7) * rest_wave(8) * rest_wave(9) *  rest_wave(10) * rest_wave(11) * rest_wave(12) * rest_wave(13) * rest_wave(14)) * ( powerlaw(1) + gauss(1) + gauss(2) + gauss(3) + gauss(4) +  gauss(5) + gauss(6) + gauss(7) + gauss(8) + gauss(9) + gauss(10) + gauss(11) + gauss(12) + gauss(13) + gauss(14))
+
+TRIES   PAR#      P_VALUE        P_MIN        P_MAX  TIME 
+
+ chi^2 = 2.1618e+03,  DoF =  1653, time = Wed Oct 17 11:25:59 2018  (conf_loop/pars_all_linespar.1348)
+ 
+
+ chi^2 = 2.1618e+03,  DoF =  1653, time = Wed Oct 17 11:29:46 2018  (conf_loop/pars_all_linespar.1348)
+ 
+
+ chi^2 = 2.1617e+03,  DoF =  1653, time = Wed Oct 17 11:32:35 2018  (conf_loop/pars_all_linespar.1348)
+ 
+
+ chi^2 = 2.1617e+03,  DoF =  1653, time = Wed Oct 17 11:36:05 2018  (conf_loop/pars_all_linespar.1348)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Wed Oct 17 11:38:12 2018  (conf_loop/pars_all_linespar.1348)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Wed Oct 17 11:41:12 2018  (conf_loop/pars_all_linespar.1348)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Wed Oct 17 11:44:09 2018  (conf_loop/pars_all_linespar.1348)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Wed Oct 17 11:46:19 2018  (conf_loop/pars_all_linespar.1348)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Wed Oct 17 11:48:08 2018  (conf_loop/pars_all_linespar.1348)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Wed Oct 17 11:50:17 2018  (conf_loop/pars_all_linespar.1348)
+ 

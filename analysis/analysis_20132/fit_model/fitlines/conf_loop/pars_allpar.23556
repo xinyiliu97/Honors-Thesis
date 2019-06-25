@@ -1,0 +1,81 @@
+redshift(1) * redshift(2) * sigma(1) * sigma(2) * wabs(1) * ( rest_wave(1) * rest_wave(2) * rest_wave(3) * rest_wave(4) * rest_wave(5) * rest_wave(6) * rest_wave(7) * rest_wave(8) * rest_wave(9) *  rest_wave(10) * rest_wave(11) * rest_wave(12) * rest_wave(13) * rest_wave(14) * rest_wave(15) * rest_wave(16) * rest_wave(17)  * rest_wave(18))* ( powerlaw(1) + gauss(1) + gauss(2) + gauss(3) + gauss(4) +  gauss(5) + gauss(6) + gauss(7) + gauss(8) + gauss(9) +  gauss(10) + gauss(11) + gauss(12) + gauss(13) + gauss(14) + gauss(15) + gauss(16)+gauss(17) + gauss(18))
+ idx  param             tie-to  freeze         value         min         max
+  1  redshift(1).z          0     0        -50.50733           0           0  
+  2  redshift(2).z          0     0                0           0           0  
+  3  sigma(1).beta          0     0                0           0           0  
+  4  sigma(2).beta          0     0                0           0           0  
+  5  wabs(1).nH             0     0        0.9121135           0      100000  10^22
+  6  rest_wave(1).lambda    0     0                0           0           0  
+  7  rest_wave(2).lambda    0     0                0           0           0  
+  8  rest_wave(3).lambda    0     0                0           0           0  
+  9  rest_wave(4).lambda    0     0                0           0           0  
+ 10  rest_wave(5).lambda    0     0                0           0           0  
+ 11  rest_wave(6).lambda    0     0                0           0           0  
+ 12  rest_wave(7).lambda    0     0                0           0           0  
+ 13  rest_wave(8).lambda    0     0                0           0           0  
+ 14  rest_wave(9).lambda    0     0                0           0           0  
+ 15  rest_wave(10).lambda   0     0                0           0           0  
+ 16  rest_wave(11).lambda   0     0                0           0           0  
+ 17  rest_wave(12).lambda   0     0                0           0           0  
+ 18  rest_wave(13).lambda   0     0                0           0           0  
+ 19  rest_wave(14).lambda   0     0                0           0           0  
+ 20  rest_wave(15).lambda   0     0                0           0           0  
+ 21  rest_wave(16).lambda   0     0                0           0           0  
+ 22  rest_wave(17).lambda   0     0                0           0           0  
+ 23  rest_wave(18).lambda   0     0                0           0           0  
+ 24  powerlaw(1).norm       0     0       0.03562338           0       1e+10  
+ 25  powerlaw(1).PhoIndex   0     0         1.357001          -2           9  
+ 26  gauss(1).area          0     0                1         0.3           3  photons/s/cm^2
+ 27  gauss(1).center        0     0         17.71259           0           0  A
+ 28  gauss(1).sigma         0     0            0.025       1e-06           1  A
+ 29  gauss(2).area          0     0                1         0.3           3  photons/s/cm^2
+ 30  gauss(2).center        0     0         17.71259           0           0  A
+ 31  gauss(2).sigma         0     0       0.03114817       1e-06           1  A
+ 32  gauss(3).area          0     0                1         0.3           3  photons/s/cm^2
+ 33  gauss(3).center        0     0         17.71259           0           0  A
+ 34  gauss(3).sigma         0     0       0.02592713       1e-06           1  A
+ 35  gauss(4).area          0     0                1         0.3           3  photons/s/cm^2
+ 36  gauss(4).center        0     0         17.71259           0           0  A
+ 37  gauss(4).sigma         0     0       0.03142363       1e-06           1  A
+ 38  gauss(5).area          0     0   -4.867957e+301  -1.460387e+302  9.735914e+301  photons/s/cm^2
+ 39  gauss(5).center        0     0         6.838433           0           0  A
+ 40  gauss(5).sigma         0     0       0.01150313       1e-06           1  A
+ 41  gauss(6).area          0     0        0.7459124   0.2237737    2.237737  photons/s/cm^2
+ 42  gauss(6).center        0     0         17.71259           0           0  A
+ 43  gauss(6).sigma         0     0       0.03710605       1e-06           1  A
+ 44  gauss(7).area          0     0         1.334116   0.4002348    4.002348  photons/s/cm^2
+ 45  gauss(7).center        0     0         17.71259           0           0  A
+ 46  gauss(7).sigma         0     0       0.01797494       1e-06           1  A
+ 47  gauss(8).area          0     0         1.175755   0.3527265    3.527265  photons/s/cm^2
+ 48  gauss(8).center        0     0         17.71259           0           0  A
+ 49  gauss(8).sigma         0     0       0.01410486       1e-06           1  A
+ 50  gauss(9).area          0     0         1.709419   0.5128257    5.128257  photons/s/cm^2
+ 51  gauss(9).center        0     0         17.71259           0           0  A
+ 52  gauss(9).sigma         0     0      0.001952053       1e-06           1  A
+ 53  gauss(10).area         0     0   -9.061247e+300  -2.718374e+301  1.812249e+301  photons/s/cm^2
+ 54  gauss(10).center       0     0         14.51854           0           0  A
+ 55  gauss(10).sigma        0     0       0.05955703       1e-06           1  A
+ 56  gauss(11).area         0     0        0.6342773   0.1902832    1.902832  photons/s/cm^2
+ 57  gauss(11).center       0     0             16.8           0           0  A
+ 58  gauss(11).sigma        0     0       0.02408842       1e-06           1  A
+ 59  gauss(12).area         0     0        0.7579409   0.2273823    2.273823  photons/s/cm^2
+ 60  gauss(12).center       0     0             16.8           0           0  A
+ 61  gauss(12).sigma        0     0            0.025       1e-06           1  A
+ 62  gauss(13).area         0     0        0.8657962   0.2597389    2.597389  photons/s/cm^2
+ 63  gauss(13).center       0     0             16.8           0           0  A
+ 64  gauss(13).sigma        0     0            0.025       1e-06           1  A
+ 65  gauss(14).area         0     0         1.166098   0.3498294    3.498294  photons/s/cm^2
+ 66  gauss(14).center       0     0             16.8           0           0  A
+ 67  gauss(14).sigma        0     0            0.025       1e-06           1  A
+ 68  gauss(15).area         0     0                1         0.3           3  photons/s/cm^2
+ 69  gauss(15).center       0     0             16.8           0           0  A
+ 70  gauss(15).sigma        0     0            0.025       1e-06           1  A
+ 71  gauss(16).area         0     0                1         0.3           3  photons/s/cm^2
+ 72  gauss(16).center       0     0               20           0           0  A
+ 73  gauss(16).sigma        0     0            0.025       1e-06           1  A
+ 74  gauss(17).area         0     0                1         0.3           3  photons/s/cm^2
+ 75  gauss(17).center       0     0               20           0           0  A
+ 76  gauss(17).sigma        0     0            0.025       1e-06           1  A
+ 77  gauss(18).area         0     0                1         0.3           3  photons/s/cm^2
+ 78  gauss(18).center       0     0               20           0           0  A
+ 79  gauss(18).sigma        0     0            0.025       1e-06           1  A

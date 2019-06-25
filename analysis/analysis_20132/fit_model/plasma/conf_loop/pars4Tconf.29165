@@ -1,0 +1,6 @@
+
+wabs(1) * (xaped(1) + xaped(2))
+
+TRIES   PAR#      P_VALUE        P_MIN        P_MAX  TIME 
+    1      4   1.0000e-05   1.0000e-05   2.7711e-05  Wed Nov 28 00:14:15 2018
+    1     18   2.0000e-02   1.9986e-02   2.0000e-02  Wed Nov 28 03:16:42 2018

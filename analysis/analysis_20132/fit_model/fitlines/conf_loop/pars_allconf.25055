@@ -1,0 +1,7 @@
+
+redshift(1) * redshift(2) * sigma(1) * sigma(2) * wabs(1) * ( rest_wave(1) * rest_wave(2) * rest_wave(3) * rest_wave(4) * rest_wave(5) * rest_wave(6) * rest_wave(7) * rest_wave(8) * rest_wave(9) *  rest_wave(10) * rest_wave(11) * rest_wave(12) * rest_wave(13) * rest_wave(14) * rest_wave(15) * rest_wave(16) * rest_wave(17)  * rest_wave(18))* ( powerlaw(1) + gauss(1) + gauss(2) + gauss(3) + gauss(4) +  gauss(5) + gauss(6) + gauss(7) + gauss(8) + gauss(9) +  gauss(10) + gauss(11) + gauss(12) + gauss(13) + gauss(14) + gauss(15) + gauss(16)+gauss(17) + gauss(18))
+
+TRIES   PAR#      P_VALUE        P_MIN        P_MAX  TIME 
+    1     25   9.2661e-01   8.9634e-01   9.5721e-01  Tue Apr 30 02:12:37 2019
+    1     50   6.6529e-04   4.7361e-04   9.1413e-04  Tue Apr 30 02:13:14 2019
+    1     71   9.4733e-05   7.7280e-05   1.1234e-04  Tue Apr 30 02:13:50 2019

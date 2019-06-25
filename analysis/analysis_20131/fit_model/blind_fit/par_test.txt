@@ -1,0 +1,21 @@
+wabs(1)*Powerlaw(1)+voigt(1)+voigt(2)+voigt(3)+voigt(4)
+ idx  param          tie-to  freeze         value         min         max
+  1  wabs(1).nH          0     1              0.5           0      100000  10^22
+  2  Powerlaw(1).norm    0     0       0.01534728       1e-08       1e+08  
+  3  Powerlaw(1).alpha   0     0        -1.352339          -5           3  
+  4  voigt(1).norm       0     0     0.0002462314           0       1e+38  
+  5  voigt(1).LineE      0     0         7.533482    7.424203    7.606392  keV
+  6  voigt(1).Sigma      0     1            0.001           0          10  keV
+  7  voigt(1).Gamma      0     0       0.03999654        0.01        0.04  keV
+  8  voigt(2).norm       0     0     0.0002509134           0       1e+38  
+  9  voigt(2).LineE      0     0         6.728147     6.63017    6.775092  keV
+ 10  voigt(2).Sigma      0     1            0.001           0          10  keV
+ 11  voigt(2).Gamma      0     0       0.03999969        0.01        0.04  keV
+ 12  voigt(3).norm       0     0     0.0006592067           0       1e+38  
+ 13  voigt(3).LineE      0     0         6.461401    6.358163    6.491319  keV
+ 14  voigt(3).Sigma      0     1            0.001           0          10  keV
+ 15  voigt(3).Gamma      0     0             0.04        0.01        0.04  keV
+ 16  voigt(4).norm       0     0     0.0002109677           0       1e+38  
+ 17  voigt(4).LineE      0     0         6.410414    6.325724     6.45751  keV
+ 18  voigt(4).Sigma      0     1            0.001           0          10  keV
+ 19  voigt(4).Gamma      0     0        0.0399998        0.01        0.04  keV

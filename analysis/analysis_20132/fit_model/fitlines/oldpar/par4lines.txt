@@ -1,0 +1,31 @@
+redshift(1) * sigma(1) * wabs(1) * ( rest_wave(1) * rest_wave(2) * rest_wave(3) * rest_wave(4) ) * ( powerlaw(1) + gauss(1) + gauss(2) + gauss(3) + gauss(4) )
+ idx  param             tie-to  freeze         value         min         max
+  1  redshift(1).z          0     0      0.008256627     0.00825    0.009562  
+  2  sigma(1).beta          0     0      0.002650032      0.0025        0.01  
+  3  wabs(1).nH             0     0        0.9018362           0      100000  10^22
+  4  rest_wave(1).lambda    0     1           6.1823           0           0  
+  5  rest_wave(2).lambda    0     1           8.4211           0           0  
+  6  rest_wave(3).lambda    0     1          12.1351           0           0  
+  7  rest_wave(4).lambda    0     1           5.0553           0           0  
+  8  powerlaw(1).norm       0     0        0.0180599           0       1e+10  
+  9  powerlaw(1).PhoIndex   0     0         1.256217          -2           9  
+ 10  gauss(1).area          0     0     0.0001378172           0           0  photons/s/cm^2
+ 11  gauss(1).center        0     1         6.233345           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(1).lambda
+ 12  gauss(1).sigma         0     1       0.01651856       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(1).lambda*sigma(1).beta
+ 13  gauss(2).area          0     0     0.0001194342           0           0  photons/s/cm^2
+ 14  gauss(2).center        0     1          8.49063           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(2).lambda
+ 15  gauss(2).sigma         0     1       0.02250044       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(2).lambda*sigma(1).beta
+ 16  gauss(3).area          0     0     0.0003988548           0           0  photons/s/cm^2
+ 17  gauss(3).center        0     1         12.23529           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(3).lambda
+ 18  gauss(3).sigma         0     1       0.03242392       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(3).lambda*sigma(1).beta
+ 19  gauss(4).area          0     0     6.542474e-05           0           0  photons/s/cm^2
+ 20  gauss(4).center        0     1          5.09704           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(4).lambda
+ 21  gauss(4).sigma         0     1       0.01350732       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(4).lambda*sigma(1).beta

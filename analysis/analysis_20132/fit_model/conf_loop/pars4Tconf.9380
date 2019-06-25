@@ -1,0 +1,9 @@
+
+wabs(1) * (xaped(1) + xaped(2))
+
+TRIES   PAR#      P_VALUE        P_MIN        P_MAX  TIME 
+    1      3   1.0000e-03   1.0000e-03   1.0126e-03  Mon Oct 15 01:11:50 2018
+
+ chi^2 = 4.3070e+03,  DoF =  3340, time = Mon Oct 15 01:21:43 2018  (conf_loop/pars4Tpar.9380)
+ 
+    1      2   1.0000e-03   1.0000e-03   1.0323e-03  Mon Oct 15 03:52:59 2018

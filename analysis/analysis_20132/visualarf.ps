@@ -1,0 +1,528 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%For: xliu
+%%Title: PGPLOT PostScript plot
+%%Creator: PGPLOT
+%%CreationDate:  3-Feb-2019 12:06
+%%BoundingBox: (atend)
+%%Orientation: Landscape
+%%Pages: (atend)
+%%EndComments
+%%BeginProlog
+/gs /gsave load def
+/gr /grestore  load def
+/L {moveto rlineto currentpoint stroke moveto} bind def
+/C {rlineto currentpoint stroke moveto} bind def
+/D {moveto 0 0 rlineto currentpoint stroke moveto} bind def
+/SLW {5 mul setlinewidth} bind def
+/SCF /pop load def
+/BP {newpath moveto} bind def
+/LP /rlineto load def
+/EP {rlineto closepath eofill} bind def
+/MB {gsave translate MFAC dup scale 1 setlinewidth 2 setlinecap 0 setlinejoin newpath} bind def
+/ME /grestore load def
+/CC {0 360 arc stroke} bind def
+/FC {0 360 arc fill} bind def
+% font stuff
+/pgscale 0.072 def
+% ISOLATIN encoding with built in linespacing definitions.
+% from tinydict by David Byram-Wigfield, http://www.capella.demon.co.uk
+% fontsize default setting.
+/FS	{ /fs exch def } def	 12 FS
+% linespacing ratio to fontsize: 1.3 is my default
+/LR {/lr exch def } def 1.3 LR
+/LG { /lg exch def } def   12 LG
+% calculate linespacing from chosen fontsize
+/F { exch dup lr mul LG dup FS exch findfont exch scalefont setfont } def
+/ISOFONT { findfont dup length dict begin { 1 index /FID ne {def} {pop pop}
+ifelse } forall /Encoding ISOLatin1Encoding def currentdict end /tmpfont
+exch definefont exch dup lr mul LG dup FS
+ scalefont setfont }  def
+/half { fs 2 div } bind def % half linespacing
+/quart { fs 4 div } bind def % quarter linespacing
+% vertical kerning: e.g. 5 v or -10 v
+/v { 0 exch rmoveto } def
+% horizontal kerning: e.g. 5 h or -10 h
+/h { 0 rmoveto } def
+% move up half the linespacing
+/up { half v } def
+% move down half the linespacing
+/dn { half neg v } def
+/TRL {/Times-Roman ISOFONT} bind def
+/TBL {/Times-Bold ISOFONT} bind def
+/TIL {/Times-Italic ISOFONT} bind def
+/TBIL {/Times-BoldItalic ISOFONT} bind def
+/HVL  {/Helvetica ISOFONT} bind def
+/HOL  {/Helvetica-Oblique ISOFONT} bind def
+/HNL  {/Helvetica-Narrow ISOFONT} bind def
+/HNBL  {/Helvetica-NarrowBold ISOFONT} bind def
+/HBL  {/Helvetica-Bold ISOFONT} bind def
+/ZL  {/Zapf-Chancery-MediumItalic ISOFONT} bind def
+/SL { /Symbol F } def
+/RS{findfont exch scalefont setfont moveto dup stringwidth neg exch neg exch rmoveto show} bind def
+/TR  { fs TRL   moveto rotate show currentpoint } def
+/TB  { fs TBL   moveto rotate show currentpoint } def
+/TI  { fs TIL   moveto rotate show currentpoint } def
+/TBI { fs TBIL  moveto rotate show currentpoint } def
+/HV  { fs HVL   moveto rotate show currentpoint } def
+/H0  { fs HOL   moveto rotate show currentpoint } def
+/HB  { fs HBL   moveto rotate show currentpoint } def
+/HN  { fs HNL   moveto rotate show currentpoint } def
+/HNB { fs HNBL  moveto rotate show currentpoint } def
+/Z   { fs ZL    moveto rotate show currentpoint } def
+/S   { fs SL    moveto rotate show currentpoint } def
+/TRC  { fs TRL   show currentpoint } def
+/TBC  { fs TBL   show currentpoint } def
+/TIC  { fs TIL   show currentpoint } def
+/TBIC { fs TBIL  show currentpoint } def
+/HVC  { fs HVL   show currentpoint } def
+/H0C  { fs HOL   show currentpoint } def
+/HNBC { fs HNBL  show currentpoint } def
+/HBC  { fs HBL   show currentpoint } def
+/HNC  { fs HNL   show currentpoint } def
+/ZC   { fs ZL    show currentpoint } def
+/SC   { fs SL    show currentpoint } def
+%%EndProlog
+0.000 0.000 0.000 setrgbcolor
+
+%%Page: 1 1
+%%BeginPageSetup
+/PGPLOT save def
+pgscale pgscale scale
+8149 250 translate 90 rotate
+1 setlinejoin 1 setlinecap 1 SLW 1 SCF
+%%EndPageSetup
+%%PageBoundingBox: (atend)
+0.000 0.000 0.000 setrgbcolor 1 SLW 8909 0 795 4289 L 0 3120 C -8909 0 C 0 -3120 C 0 54 C 0 27 944 4289 L 0 27 1092 4289 L
+0 27 1241 4289 L 0 27 1389 4289 L 0 54 1538 4289 L 0 27 1686 4289 L 0 27 1835 4289 L 0 27 1983 4289 L 0 27 2132 4289 L
+0 54 2280 4289 L 0 27 2429 4289 L 0 27 2577 4289 L 0 27 2726 4289 L 0 27 2874 4289 L 0 54 3022 4289 L 0 27 3171 4289 L
+0 27 3319 4289 L 0 27 3468 4289 L 0 27 3616 4289 L 0 54 3765 4289 L 0 27 3913 4289 L 0 27 4062 4289 L 0 27 4210 4289 L
+0 27 4359 4289 L 0 54 4507 4289 L 0 27 4656 4289 L 0 27 4804 4289 L 0 27 4953 4289 L 0 27 5101 4289 L 0 54 5249 4289 L
+0 27 5398 4289 L 0 27 5546 4289 L 0 27 5695 4289 L 0 27 5843 4289 L 0 54 5992 4289 L 0 27 6140 4289 L 0 27 6289 4289 L
+0 27 6437 4289 L 0 27 6586 4289 L 0 54 6734 4289 L 0 27 6883 4289 L 0 27 7031 4289 L 0 27 7180 4289 L 0 27 7328 4289 L
+0 54 7477 4289 L 0 27 7625 4289 L 0 27 7773 4289 L 0 27 7922 4289 L 0 27 8070 4289 L 0 54 8219 4289 L 0 27 8367 4289 L
+0 27 8516 4289 L 0 27 8664 4289 L 0 27 8813 4289 L 0 54 8961 4289 L 0 27 9110 4289 L 0 27 9258 4289 L 0 27 9407 4289 L
+0 27 9555 4289 L 0 54 9704 4289 L 0 54 795 7355 L 0 27 944 7382 L 0 27 1092 7382 L 0 27 1241 7382 L 0 27 1389 7382 L
+0 54 1538 7355 L 0 27 1686 7382 L 0 27 1835 7382 L 0 27 1983 7382 L 0 27 2132 7382 L 0 54 2280 7355 L 0 27 2429 7382 L
+0 27 2577 7382 L 0 27 2726 7382 L 0 27 2874 7382 L 0 54 3022 7355 L 0 27 3171 7382 L 0 27 3319 7382 L 0 27 3468 7382 L
+0 27 3616 7382 L 0 54 3765 7355 L 0 27 3913 7382 L 0 27 4062 7382 L 0 27 4210 7382 L 0 27 4359 7382 L 0 54 4507 7355 L
+0 27 4656 7382 L 0 27 4804 7382 L 0 27 4953 7382 L 0 27 5101 7382 L 0 54 5249 7355 L 0 27 5398 7382 L 0 27 5546 7382 L
+0 27 5695 7382 L 0 27 5843 7382 L 0 54 5992 7355 L 0 27 6140 7382 L 0 27 6289 7382 L 0 27 6437 7382 L 0 27 6586 7382 L
+0 54 6734 7355 L 0 27 6883 7382 L 0 27 7031 7382 L 0 27 7180 7382 L 0 27 7328 7382 L 0 54 7477 7355 L 0 27 7625 7382 L
+0 27 7773 7382 L 0 27 7922 7382 L 0 27 8070 7382 L 0 54 8219 7355 L 0 27 8367 7382 L 0 27 8516 7382 L 0 27 8664 7382 L
+0 27 8813 7382 L 0 54 8961 7355 L 0 27 9110 7382 L 0 27 9258 7382 L 0 27 9407 7382 L 0 27 9555 7382 L 0 54 9704 7355 L
+  9.36  pgscale div FS gs   0.00        759.425       4149.068 moveto rotate (0) HVC gr
+  9.36  pgscale div FS gs   0.00       1501.766       4149.068 moveto rotate (1) HVC gr
+  9.36  pgscale div FS gs   0.00       2244.106       4149.068 moveto rotate (2) HVC gr
+  9.36  pgscale div FS gs   0.00       2986.447       4149.068 moveto rotate (3) HVC gr
+  9.36  pgscale div FS gs   0.00       3728.787       4149.068 moveto rotate (4) HVC gr
+  9.36  pgscale div FS gs   0.00       4471.128       4149.068 moveto rotate (5) HVC gr
+  9.36  pgscale div FS gs   0.00       5213.468       4149.068 moveto rotate (6) HVC gr
+  9.36  pgscale div FS gs   0.00       5955.809       4149.068 moveto rotate (7) HVC gr
+  9.36  pgscale div FS gs   0.00       6698.149       4149.068 moveto rotate (8) HVC gr
+  9.36  pgscale div FS gs   0.00       7440.490       4149.068 moveto rotate (9) HVC gr
+  9.36  pgscale div FS gs   0.00       8146.798       4149.068 moveto rotate (10) HVC gr
+  9.36  pgscale div FS gs   0.00       8889.140       4149.068 moveto rotate (11) HVC gr
+  9.36  pgscale div FS gs   0.00       9631.480       4149.068 moveto rotate (12) HVC gr
+54 0 795 4349 L 27 0 795 4574 L 27 0 795 4799 L 27 0 795 5023 L 27 0 795 5248 L 54 0 795 5472 L 27 0 795 5697 L 27 0 795 5922 L
+27 0 795 6146 L 27 0 795 6371 L 54 0 795 6596 L 27 0 795 6820 L 27 0 795 7045 L 27 0 795 7269 L 54 0 9650 4349 L 27 0 9677 4574 L
+27 0 9677 4799 L 27 0 9677 5023 L 27 0 9677 5248 L 54 0 9650 5472 L 27 0 9677 5697 L 27 0 9677 5922 L 27 0 9677 6146 L
+27 0 9677 6371 L 54 0 9650 6596 L 27 0 9677 6820 L 27 0 9677 7045 L 27 0 9677 7269 L
+  9.36  pgscale div FS gs  90.00        713.567       4313.411 moveto rotate (0) HVC gr
+  9.36  pgscale div FS gs  90.00        713.567       5400.418 moveto rotate (10) HVC gr
+  9.36  pgscale div FS gs  90.00        713.567       6523.457 moveto rotate (20) HVC gr
+  9.36  pgscale div FS gs   0.00       4865.929       3915.098 moveto rotate (Energy \(KeV\)) HVC gr
+  9.36  pgscale div FS gs  90.00        538.090       4857.381 moveto rotate (HEG m = +1 Effective Area \(cm) HVC   5.62 pgscale div FS up (2) HVC dn   9.36 pgscale div FS (\)) HVC gr
+2 0 1538 4349 L 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 0 1 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C
+2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C
+2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 0 1 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 0 1 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 0 1 C 2 0 C 1 0 C 2 0 C 2 0 C
+0 1 C 2 0 C 2 0 C 2 0 C 0 1 C 2 0 C 1 0 C 0 1 C 2 0 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 2 0 C 0 1 C 2 0 C 0 1 C 1 0 C 0 1 C 2 0 C 0 1 C
+2 0 C 0 1 C 2 0 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 1 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C
+0 2 C 1 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 1 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C
+0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 1 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 1 C 1 0 C
+0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 2 C 1 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C
+0 2 C 2 0 C 0 1 C 1 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 1 0 C 0 1 C 2 0 C 0 2 C 2 0 C
+0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 1 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C
+0 1 C 1 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 1 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C
+0 2 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 1 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 1 0 C
+0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 1 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C
+0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 1 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 2 C 1 0 C 0 2 C 2 0 C
+0 1 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 2 C 1 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C
+0 2 C 2 0 C 0 2 C 1 0 C 2 0 C 0 -3 C 2 0 C 0 -4 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -4 C 2 0 C 2 0 C
+0 -2 C 2 0 C 0 -1 C 2 0 C 2 0 C 0 4 C 2 0 C 0 6 C 1 0 C 0 4 C 2 0 C 0 6 C 2 0 C 0 4 C 2 0 C 0 6 C 2 0 C 0 5 C 2 0 C 0 5 C 2 0 C
+0 5 C 1 0 C 0 5 C 2 0 C 0 3 C 2 0 C 0 5 C 2 0 C 0 4 C 2 0 C 0 5 C 2 0 C 0 4 C 2 0 C 0 3 C 1 0 C 0 5 C 2 0 C 0 4 C 2 0 C 0 3 C 2 0 C
+0 4 C 2 0 C 0 4 C 2 0 C 0 4 C 1 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 1 C 2 0 C 0 -1 C 2 0 C 0 -8 C 1 0 C 0 -3 C
+2 0 C 0 -5 C 2 0 C 0 3 C 2 0 C 0 7 C 2 0 C 0 3 C 2 0 C 0 7 C 2 0 C 0 6 C 1 0 C 0 8 C 2 0 C 0 7 C 2 0 C 0 6 C 2 0 C 0 8 C 2 0 C 0 3 C
+2 0 C 0 4 C 2 0 C 0 4 C 1 0 C 0 5 C 2 0 C 0 8 C 2 0 C 0 4 C 2 0 C 0 2 C 2 0 C 0 4 C 2 0 C 0 1 C 2 0 C 0 5 C 1 0 C 0 3 C 2 0 C 0 2 C
+2 0 C 0 5 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 3 C 2 0 C 0 1 C 1 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 -1 C 2 0 C 0 -6 C 2 0 C 0 -5 C 2 0 C
+0 -3 C 2 0 C 0 3 C 1 0 C 0 6 C 2 0 C 0 11 C 2 0 C 0 9 C 2 0 C 0 12 C 2 0 C 0 13 C 2 0 C 0 9 C 2 0 C 0 19 C 1 0 C 0 17 C 2 0 C 0 20 C
+2 0 C 0 17 C 2 0 C 0 12 C 2 0 C 0 14 C 2 0 C 0 8 C 2 0 C 0 9 C 1 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 6 C 2 0 C 0 4 C 2 0 C 0 7 C 2 0 C
+0 5 C 2 0 C 0 3 C 1 0 C 0 6 C 2 0 C 0 2 C 2 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 3 C 2 0 C 0 4 C 2 0 C 0 -1 C 1 0 C 2 0 C 0 2 C 2 0 C 0 3 C
+2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 -4 C 2 0 C 0 -3 C 1 0 C 0 -6 C 2 0 C 0 2 C 2 0 C 0 6 C 2 0 C 0 20 C 2 0 C 0 24 C 2 0 C 0 19 C 2 0 C
+0 20 C 1 0 C 0 11 C 2 0 C 0 12 C 2 0 C 0 9 C 2 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 4 C 2 0 C 0 4 C 1 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 6 C
+2 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 6 C 2 0 C 0 5 C 1 0 C 0 5 C 2 0 C 0 6 C 2 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 3 C 2 0 C 0 4 C 2 0 C 0 4 C
+1 0 C 0 5 C 2 0 C 0 6 C 2 0 C 0 6 C 2 0 C 0 6 C 2 0 C 0 5 C 2 0 C 0 3 C 1 0 C 0 6 C 2 0 C 0 2 C 2 0 C 0 5 C 2 0 C 0 3 C 2 0 C 0 3 C
+2 0 C 0 3 C 2 0 C 0 4 C 1 0 C 0 3 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 4 C 2 0 C 0 5 C 2 0 C 0 7 C 2 0 C 0 9 C 1 0 C 0 7 C 2 0 C 0 10 C
+2 0 C 0 7 C 2 0 C 0 6 C 2 0 C 0 5 C 2 0 C 0 4 C 2 0 C 0 5 C 1 0 C 0 3 C 2 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 7 C 2 0 C 0 6 C 2 0 C 0 6 C
+2 0 C 0 6 C 1 0 C 0 4 C 2 0 C 0 5 C 2 0 C 0 3 C 2 0 C 0 4 C 2 0 C 0 5 C 2 0 C 0 6 C 2 0 C 0 6 C 1 0 C 0 6 C 2 0 C 0 7 C 2 0 C 0 7 C
+2 0 C 0 7 C 2 0 C 0 6 C 2 0 C 0 4 C 2 0 C 0 4 C 1 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 6 C 2 0 C 0 6 C 2 0 C 0 5 C 2 0 C 0 4 C
+1 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 4 C 2 0 C 0 5 C 1 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 3 C 2 0 C 0 5 C
+2 0 C 0 3 C 2 0 C 0 6 C 2 0 C 0 4 C 1 0 C 0 4 C 2 0 C 0 5 C 2 0 C 0 4 C 2 0 C 0 7 C 2 0 C 0 4 C 2 0 C 0 7 C 2 0 C 0 4 C 1 0 C 0 4 C
+2 0 C 0 4 C 2 0 C 0 2 C 2 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 5 C 1 0 C 0 1 C 2 0 C 0 -1 C 2 0 C 0 2 C 2 0 C 0 5 C 2 0 C 0 7 C
+2 0 C 0 5 C 2 0 C 0 2 C 1 0 C 0 4 C 2 0 C 0 2 C 2 0 C 0 5 C 2 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 5 C 2 0 C 0 5 C 1 0 C 0 6 C 2 0 C 0 6 C
+2 0 C 0 5 C 2 0 C 0 8 C 2 0 C 0 6 C 2 0 C 0 5 C 2 0 C 0 5 C 1 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 4 C
+2 0 C 0 3 C 1 0 C 0 6 C 2 0 C 0 4 C 2 0 C 0 7 C 2 0 C 0 7 C 2 0 C 0 7 C 2 0 C 0 7 C 1 0 C 0 4 C 2 0 C 0 7 C 2 0 C 0 6 C 2 0 C 0 5 C
+2 0 C 0 6 C 2 0 C 0 3 C 2 0 C 0 5 C 1 0 C 0 4 C 2 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 1 C 2 0 C 0 5 C 2 0 C 0 2 C 2 0 C 0 3 C 1 0 C 0 3 C
+2 0 C 0 4 C 2 0 C 0 5 C 2 0 C 0 3 C 2 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 4 C 1 0 C 0 3 C 2 0 C 0 6 C 2 0 C 0 3 C 2 0 C 0 3 C 2 0 C 0 1 C
+2 0 C 0 2 C 2 0 C 0 4 C 1 0 C 0 5 C 2 0 C 0 4 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 1 0 C 0 2 C 2 0 C 2 0 C 0 -1 C
+2 0 C 0 4 C 2 0 C 0 2 C 2 0 C 0 9 C 2 0 C 0 5 C 1 0 C 0 8 C 2 0 C 0 4 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 4 C 2 0 C 0 8 C 2 0 C 0 9 C
+1 0 C 0 8 C 2 0 C 0 8 C 2 0 C 0 7 C 2 0 C 0 7 C 2 0 C 0 6 C 2 0 C 0 5 C 2 0 C 0 4 C 1 0 C 0 5 C 2 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 3 C
+2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 2 C 1 0 C 0 2 C 2 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 4 C 2 0 C 0 6 C 1 0 C 0 4 C
+2 0 C 0 5 C 2 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 3 C 2 0 C 0 1 C 2 0 C 0 2 C 1 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 3 C
+2 0 C 0 1 C 2 0 C 0 3 C 1 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 4 C 2 0 C 0 3 C 2 0 C 0 5 C 2 0 C 0 4 C 1 0 C 0 3 C 2 0 C 0 4 C
+2 0 C 0 6 C 2 0 C 0 6 C 2 0 C 0 4 C 2 0 C 0 2 C 2 0 C 0 3 C 1 0 C 0 4 C 2 0 C 0 3 C 2 0 C 0 4 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 2 C
+2 0 C 0 2 C 1 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 5 C 2 0 C 0 4 C 2 0 C 0 6 C 2 0 C 0 5 C 1 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 6 C 2 0 C 0 2 C
+2 0 C 0 5 C 2 0 C 0 4 C 2 0 C 0 4 C 1 0 C 0 7 C 2 0 C 0 4 C 2 0 C 0 5 C 2 0 C 0 3 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 3 C 1 0 C 0 4 C
+2 0 C 0 3 C 2 0 C 0 4 C 2 0 C 0 3 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 3 C 1 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 4 C 2 0 C 0 5 C 2 0 C 0 7 C 2 0 C
+0 6 C 2 0 C 0 5 C 1 0 C 0 3 C 2 0 C 0 4 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 4 C 1 0 C 0 3 C 2 0 C 0 4 C 2 0 C
+0 3 C 2 0 C 0 4 C 2 0 C 0 6 C 2 0 C 0 4 C 2 0 C 0 3 C 1 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 1 C 2 0 C 0 5 C 2 0 C 0 3 C 2 0 C
+0 6 C 1 0 C 0 6 C 2 0 C 0 3 C 2 0 C 0 4 C 2 0 C 0 2 C 2 0 C 0 4 C 2 0 C 0 2 C 2 0 C 1 0 C 0 1 C 2 0 C 0 -1 C 2 0 C 2 0 C 0 -1 C
+2 0 C 0 2 C 2 0 C 0 4 C 2 0 C 0 2 C 1 0 C 0 3 C 2 0 C 0 3 C 2 0 C 0 1 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 3 C 1 0 C 0 3 C
+2 0 C 0 4 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 1 C 2 0 C 0 3 C 1 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 4 C 2 0 C 0 1 C 2 0 C 0 3 C
+2 0 C 0 2 C 2 0 C 0 2 C 1 0 C 0 3 C 2 0 C 0 3 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 2 0 C 0 1 C 2 0 C 0 3 C 1 0 C 0 2 C 2 0 C 0 4 C 2 0 C
+0 4 C 2 0 C 0 5 C 2 0 C 0 3 C 2 0 C 0 3 C 2 0 C 0 3 C 1 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 3 C 2 0 C 0 3 C 2 0 C
+0 2 C 1 0 C 0 3 C 2 0 C 0 1 C 2 0 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 2 C 1 0 C 0 1 C 2 0 C 0 2 C 2 0 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C
+2 0 C 0 2 C 1 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 1 0 C 0 1 C 2 0 C 2 0 C 0 2 C 2 0 C
+0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 3 C 1 0 C 0 1 C 2 0 C 2 0 C 0 3 C 2 0 C 2 0 C 0 2 C 2 0 C 2 0 C 0 -1 C 1 0 C 0 2 C 2 0 C 0 3 C
+2 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 3 C 2 0 C 0 3 C 1 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 2 0 C
+0 1 C 1 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 2 0 C 0 1 C 1 0 C 0 2 C 2 0 C 0 -1 C 2 0 C 0 1 C 2 0 C 0 2 C
+2 0 C 0 -1 C 2 0 C 0 2 C 2 0 C 0 1 C 1 0 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 3 C 2 0 C 0 1 C 2 0 C 2 0 C 1 0 C 0 -1 C 2 0 C 0 1 C
+2 0 C 2 0 C 2 0 C 2 0 C 0 -1 C 2 0 C 1 0 C 0 4 C 2 0 C 0 5 C 2 0 C 0 1 C 2 0 C 2 0 C 2 0 C 0 2 C 2 0 C 0 2 C 1 0 C 0 2 C 2 0 C 0 2 C
+2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 1 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 2 0 C 2 0 C 0 -1 C 2 0 C
+1 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 3 C 1 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C
+0 -1 C 2 0 C 0 1 C 2 0 C 0 -1 C 2 0 C 1 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C
+0 1 C 2 0 C 2 0 C 2 0 C 0 2 C 1 0 C 0 2 C 2 0 C 2 0 C 2 0 C 0 -2 C 2 0 C 0 1 C 2 0 C 2 0 C 0 1 C 1 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 2 C
+2 0 C 0 1 C 2 0 C 2 0 C 2 0 C 0 -3 C 1 0 C 0 -36 C 2 0 C 0 -54 C 2 0 C 0 -57 C 2 0 C 0 -54 C 2 0 C 0 -40 C 2 0 C 0 7 C 2 0 C 0 20 C
+1 0 C 0 2 C 2 0 C 0 24 C 2 0 C 0 7 C 2 0 C 0 17 C 2 0 C 0 19 C 2 0 C 0 10 C 2 0 C 0 8 C 1 0 C 0 6 C 2 0 C 0 8 C 2 0 C 0 4 C 2 0 C
+0 4 C 2 0 C 0 8 C 2 0 C 2 0 C 0 2 C 1 0 C 0 3 C 2 0 C 0 -5 C 2 0 C 0 2 C 2 0 C 0 7 C 2 0 C 0 -7 C 2 0 C 0 7 C 2 0 C 0 -5 C 1 0 C
+0 3 C 2 0 C 0 5 C 2 0 C 0 -7 C 2 0 C 0 9 C 2 0 C 0 3 C 2 0 C 0 -4 C 2 0 C 0 8 C 1 0 C 2 0 C 0 -3 C 2 0 C 0 1 C 2 0 C 0 -1 C 2 0 C
+2 0 C 0 -1 C 2 0 C 0 3 C 1 0 C 0 -3 C 2 0 C 0 -9 C 2 0 C 0 5 C 2 0 C 0 -8 C 2 0 C 0 1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 1 C 2 0 C
+0 1 C 2 0 C 0 -4 C 2 0 C 0 2 C 2 0 C 0 -2 C 2 0 C 0 -7 C 2 0 C 0 -5 C 1 0 C 0 4 C 2 0 C 0 5 C 2 0 C 0 -9 C 2 0 C 0 -2 C 2 0 C 0 7 C
+2 0 C 0 -7 C 2 0 C 0 3 C 1 0 C 0 -10 C 2 0 C 0 1 C 2 0 C 0 -6 C 2 0 C 0 -11 C 2 0 C 0 -6 C 2 0 C 0 -12 C 2 0 C 0 -15 C 1 0 C 0 -3 C
+2 0 C 0 -37 C 2 0 C 0 -34 C 2 0 C 0 -22 C 2 0 C 0 -14 C 2 0 C 0 31 C 2 0 C 0 39 C 1 0 C 0 60 C 2 0 C 0 52 C 2 0 C 0 33 C 2 0 C
+0 27 C 2 0 C 0 11 C 2 0 C 0 5 C 2 0 C 0 -1 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 1 0 C 0 -1 C
+2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 1 C 2 0 C 2 0 C 0 -1 C 1 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 2 C 2 0 C 0 -1 C 2 0 C 0 1 C
+2 0 C 2 0 C 0 -2 C 1 0 C 2 0 C 0 -1 C 2 0 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -4 C 1 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C
+0 -2 C 2 0 C 2 0 C 0 -1 C 2 0 C 2 0 C 0 -2 C 1 0 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 2 0 C 0 -1 C 1 0 C 0 -1 C
+2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 2 0 C 2 0 C 0 3 C 2 0 C 1 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 -3 C 2 0 C
+0 -3 C 2 0 C 0 -4 C 1 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 1 C 2 0 C 1 0 C 0 -1 C 2 0 C 0 -1 C
+2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 1 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C
+2 0 C 0 -1 C 1 0 C 0 -1 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 2 0 C 1 0 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C
+0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 1 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 1 0 C
+0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 1 0 C 0 -1 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 2 0 C
+0 -2 C 2 0 C 0 -2 C 1 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 1 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C
+2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -4 C 1 0 C 0 -5 C 2 0 C 0 -4 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C
+2 0 C 0 -2 C 1 0 C 2 0 C 0 -1 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -3 C
+2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -1 C 1 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -4 C
+2 0 C 0 -3 C 1 0 C 0 -3 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 -4 C 1 0 C 0 -4 C 2 0 C 0 -2 C 2 0 C 2 0 C 0 2 C
+2 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 3 C 1 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 1 0 C 0 -1 C
+2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 -1 C 1 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 1 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C
+0 -2 C 2 0 C 2 0 C 0 -1 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -3 C 2 0 C 0 -3 C 1 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 1 0 C 0 -2 C
+2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 1 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C
+0 -3 C 2 0 C 0 -4 C 1 0 C 0 -4 C 2 0 C 0 -4 C 2 0 C 0 -3 C 2 0 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 3 C 1 0 C 0 3 C 2 0 C 0 1 C 2 0 C
+0 -1 C 2 0 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -6 C 1 0 C 0 -3 C 2 0 C 0 -4 C 2 0 C 0 -4 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C
+2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -4 C 2 0 C 0 -2 C 2 0 C 0 -4 C 2 0 C 0 -4 C 1 0 C 0 -3 C 2 0 C 0 -2 C
+2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -5 C 1 0 C 0 -6 C 2 0 C 0 -4 C 2 0 C 0 -4 C 2 0 C 0 -1 C 2 0 C 0 1 C
+2 0 C 2 0 C 0 -3 C 1 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 1 C 1 0 C 2 0 C 0 2 C 2 0 C 0 2 C
+2 0 C 0 -1 C 2 0 C 0 1 C 2 0 C 0 4 C 2 0 C 0 4 C 1 0 C 0 5 C 2 0 C 0 7 C 2 0 C 0 5 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 2 C
+1 0 C 0 2 C 2 0 C 0 1 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 2 0 C 1 0 C 0 -4 C 2 0 C 0 -5 C 2 0 C 0 -4 C 2 0 C 0 -5 C 2 0 C 0 -1 C
+2 0 C 0 -1 C 2 0 C 0 1 C 1 0 C 0 -1 C 2 0 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 -3 C 1 0 C 0 -4 C 2 0 C 0 -3 C
+2 0 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 -1 C 1 0 C 0 1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 1 C 2 0 C 0 -1 C 2 0 C 0 1 C
+2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -5 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 1 0 C 0 -5 C 2 0 C 0 -2 C
+2 0 C 0 -3 C 2 0 C 2 0 C 0 1 C 2 0 C 1 0 C 2 0 C 0 -1 C 2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C
+0 -3 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -3 C 2 0 C 2 0 C 0 -4 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 1 C 2 0 C 0 -2 C
+2 0 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -5 C 2 0 C 0 -3 C 2 0 C 0 -3 C 1 0 C 0 -1 C
+2 0 C 0 -2 C 2 0 C 0 -4 C 2 0 C 0 -6 C 2 0 C 0 -5 C 2 0 C 0 -4 C 2 0 C 0 -1 C 1 0 C 2 0 C 0 3 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C
+0 -2 C 2 0 C 0 -3 C 2 0 C 0 -1 C 1 0 C 0 -3 C 2 0 C 2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 1 C 2 0 C 0 1 C 1 0 C 0 -1 C
+2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -4 C 2 0 C
+0 -4 C 2 0 C 0 -2 C 2 0 C 0 -3 C 1 0 C 0 -2 C 2 0 C 0 -5 C 2 0 C 0 -6 C 2 0 C 0 -4 C 2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 -3 C 1 0 C
+0 -3 C 2 0 C 0 -5 C 2 0 C 0 -6 C 2 0 C 0 -7 C 2 0 C 0 -4 C 2 0 C 0 -3 C 2 0 C 0 3 C 1 0 C 0 4 C 2 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 2 C
+2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C 2 0 C 0 1 C 2 0 C 2 0 C 0 -2 C
+2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -2 C 1 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -4 C 2 0 C 0 -2 C
+1 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C 0 -6 C 2 0 C 0 -5 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 1 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -4 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 1 0 C
+0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -3 C 1 0 C 0 -4 C 2 0 C 0 -3 C 2 0 C 0 -4 C 2 0 C
+0 -2 C 2 0 C 0 -5 C 2 0 C 0 -1 C 2 0 C 1 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 -2 C 2 0 C 0 -9 C 2 0 C 0 -8 C 2 0 C 0 -6 C 2 0 C 0 -4 C
+1 0 C 2 0 C 0 -3 C 2 0 C 0 -6 C 2 0 C 0 -27 C 2 0 C 0 -44 C 2 0 C 0 -38 C 2 0 C 0 -38 C 1 0 C 0 -34 C 2 0 C 0 -35 C 2 0 C 0 -35 C
+2 0 C 0 -34 C 2 0 C 0 -32 C 2 0 C 0 -27 C 2 0 C 0 -24 C 1 0 C 0 -22 C 2 0 C 0 -17 C 2 0 C 0 -20 C 2 0 C 0 -15 C 2 0 C 0 -17 C 2 0 C
+0 -18 C 2 0 C 0 -16 C 1 0 C 0 -17 C 2 0 C 0 -21 C 2 0 C 0 -16 C 2 0 C 0 -17 C 2 0 C 0 -14 C 2 0 C 0 -15 C 2 0 C 0 -21 C 1 0 C
+0 -16 C 2 0 C 0 -18 C 2 0 C 0 -9 C 2 0 C 0 -4 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -7 C 1 0 C 0 -6 C 2 0 C 0 -13 C 2 0 C 0 -14 C
+2 0 C 0 -9 C 2 0 C 0 -12 C 2 0 C 0 -7 C 2 0 C 0 -11 C 1 0 C 0 -12 C 2 0 C 0 -12 C 2 0 C 0 -13 C 2 0 C 0 -12 C 2 0 C 0 -16 C 2 0 C
+0 -13 C 2 0 C 0 -14 C 1 0 C 0 -11 C 2 0 C 0 -16 C 2 0 C 0 -15 C 2 0 C 0 -13 C 2 0 C 0 -11 C 2 0 C 0 -20 C 2 0 C 0 -13 C 1 0 C
+0 -13 C 2 0 C 0 -16 C 2 0 C 0 6 C 2 0 C 0 22 C 2 0 C 0 17 C 2 0 C 0 17 C 2 0 C 0 12 C 1 0 C 0 15 C 2 0 C 0 12 C 2 0 C 0 10 C 2 0 C
+0 2 C 2 0 C 0 -2 C 2 0 C 0 -7 C 2 0 C 0 -26 C 1 0 C 0 -28 C 2 0 C 0 -42 C 2 0 C 0 -45 C 2 0 C 0 -58 C 2 0 C 0 -50 C 2 0 C 0 -59 C
+1 0 C 0 -35 C 2 0 C 0 -1 C 2 0 C 0 5 C 2 0 C 0 15 C 2 0 C 0 21 C 2 0 C 0 16 C 2 0 C 0 29 C 1 0 C 0 21 C 2 0 C 0 15 C 2 0 C 0 -1 C
+2 0 C 0 -23 C 2 0 C 0 -19 C 2 0 C 0 -16 C 2 0 C 0 -12 C 1 0 C 0 -16 C 2 0 C 0 -12 C 2 0 C 0 18 C 2 0 C 0 20 C 2 0 C 0 28 C 2 0 C
+0 29 C 2 0 C 0 -2 C 1 0 C 0 -8 C 2 0 C 0 -9 C 2 0 C 0 -12 C 2 0 C 0 -10 C 2 0 C 0 -11 C 2 0 C 0 -4 C 2 0 C 0 11 C 1 0 C 0 26 C 2 0 C
+0 32 C 2 0 C 0 28 C 2 0 C 0 26 C 2 0 C 0 24 C 2 0 C 0 27 C 2 0 C 0 18 C 1 0 C 0 20 C 2 0 C 0 -3 C 2 0 C 0 -23 C 2 0 C 0 -19 C 2 0 C
+0 -23 C 2 0 C 0 1 C 2 0 C 0 -17 C 1 0 C 0 -15 C 2 0 C 0 -3 C 2 0 C 0 -13 C 2 0 C 0 -2 C 2 0 C 0 5 C 2 0 C 0 22 C 2 0 C 0 38 C 1 0 C
+0 36 C 2 0 C 0 32 C 2 0 C 0 35 C 2 0 C 0 33 C 2 0 C 0 48 C 2 0 C 0 53 C 2 0 C 0 45 C 1 0 C 0 19 C 2 0 C 0 24 C 2 0 C 0 13 C 2 0 C
+0 4 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -13 C 1 0 C 0 -9 C 2 0 C 0 -18 C 2 0 C 0 -18 C 2 0 C 0 -21 C 2 0 C 0 -12 C 2 0 C 0 -2 C
+2 0 C 0 8 C 1 0 C 0 15 C 2 0 C 0 27 C 2 0 C 0 34 C 2 0 C 0 32 C 2 0 C 0 20 C 2 0 C 0 10 C 2 0 C 1 0 C 0 1 C 2 0 C 0 -10 C 2 0 C
+0 -15 C 2 0 C 0 -24 C 2 0 C 0 -25 C 2 0 C 0 -11 C 2 0 C 0 -23 C 1 0 C 0 5 C 2 0 C 0 1 C 2 0 C 0 20 C 2 0 C 0 12 C 2 0 C 0 25 C 2 0 C
+0 8 C 2 0 C 0 1 C 1 0 C 0 -25 C 2 0 C 0 -19 C 2 0 C 0 -14 C 2 0 C 0 12 C 2 0 C 0 10 C 2 0 C 0 21 C 2 0 C 0 24 C 1 0 C 0 36 C 2 0 C
+0 43 C 2 0 C 0 28 C 2 0 C 0 24 C 2 0 C 0 9 C 2 0 C 2 0 C 0 2 C 1 0 C 0 -1 C 2 0 C 0 -17 C 2 0 C 0 -19 C 2 0 C 0 -27 C 2 0 C 0 -10 C
+2 0 C 0 -11 C 1 0 C 0 3 C 2 0 C 0 11 C 2 0 C 0 12 C 2 0 C 0 20 C 2 0 C 0 15 C 2 0 C 0 23 C 2 0 C 0 22 C 1 0 C 0 36 C 2 0 C 0 39 C
+2 0 C 0 32 C 2 0 C 0 27 C 2 0 C 0 9 C 2 0 C 0 10 C 2 0 C 0 5 C 1 0 C 0 1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -1 C 1 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -1 C 2 0 C
+0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 2 0 C 0 -1 C
+2 0 C 2 0 C 0 -1 C 1 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 1 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -5 C 2 0 C 0 -24 C 2 0 C
+0 -31 C 2 0 C 0 -31 C 2 0 C 0 -28 C 1 0 C 0 -24 C 2 0 C 0 -24 C 2 0 C 0 -16 C 2 0 C 0 -2 C 2 0 C 0 17 C 2 0 C 0 6 C 2 0 C 0 14 C
+1 0 C 0 3 C 2 0 C 0 11 C 2 0 C 0 11 C 2 0 C 0 -2 C 2 0 C 0 -7 C 2 0 C 0 -17 C 2 0 C 0 -35 C 1 0 C 0 -19 C 2 0 C 0 -34 C 2 0 C
+0 -17 C 2 0 C 0 -23 C 2 0 C 0 -9 C 2 0 C 0 13 C 2 0 C 0 2 C 1 0 C 0 15 C 2 0 C 0 7 C 2 0 C 0 3 C 2 0 C 0 14 C 2 0 C 0 2 C 2 0 C
+0 7 C 2 0 C 0 1 C 1 0 C 0 4 C 2 0 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 2 C 1 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 2 C
+2 0 C 0 -1 C 2 0 C 0 -5 C 2 0 C 0 2 C 2 0 C 0 -6 C 1 0 C 0 2 C 2 0 C 0 -1 C 2 0 C 0 -4 C 2 0 C 0 4 C 2 0 C 0 -3 C 2 0 C 0 -3 C 1 0 C
+2 0 C 0 -5 C 2 0 C 0 3 C 2 0 C 0 -5 C 2 0 C 2 0 C 0 -2 C 2 0 C 0 -4 C 1 0 C 0 1 C 2 0 C 0 -5 C 2 0 C 0 -3 C 2 0 C 0 -5 C 2 0 C
+0 -8 C 2 0 C 2 0 C 0 -12 C 1 0 C 0 -5 C 2 0 C 0 -12 C 2 0 C 0 -12 C 2 0 C 0 -4 C 2 0 C 0 -22 C 2 0 C 0 -13 C 2 0 C 0 -22 C 1 0 C
+0 -16 C 2 0 C 0 -4 C 2 0 C 0 1 C 2 0 C 0 13 C 2 0 C 0 17 C 2 0 C 0 22 C 2 0 C 0 27 C 1 0 C 0 22 C 2 0 C 0 9 C 2 0 C 0 -1 C 2 0 C
+0 -3 C 2 0 C 0 -7 C 2 0 C 0 -6 C 2 0 C 0 -14 C 1 0 C 0 -20 C 2 0 C 0 -16 C 2 0 C 0 -9 C 2 0 C 0 -1 C 2 0 C 0 5 C 2 0 C 0 10 C 2 0 C
+0 23 C 1 0 C 0 22 C 2 0 C 0 21 C 2 0 C 0 16 C 2 0 C 0 3 C 2 0 C 0 3 C 2 0 C 0 1 C 2 0 C 0 -2 C 1 0 C 0 -3 C 2 0 C 0 -4 C 2 0 C
+0 -3 C 2 0 C 0 -5 C 2 0 C 0 -5 C 2 0 C 0 -3 C 2 0 C 0 -1 C 1 0 C 2 0 C 0 2 C 2 0 C 0 5 C 2 0 C 0 7 C 2 0 C 0 8 C 2 0 C 0 7 C 2 0 C
+0 6 C 1 0 C 0 4 C 2 0 C 0 3 C 2 0 C 0 4 C 2 0 C 0 8 C 2 0 C 0 10 C 2 0 C 0 10 C 2 0 C 0 8 C 1 0 C 0 6 C 2 0 C 0 3 C 2 0 C 0 2 C
+2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 4 C 1 0 C 0 3 C 2 0 C 0 4 C 2 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 3 C 2 0 C 0 3 C 2 0 C 0 3 C
+1 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 2 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -5 C 2 0 C 0 -5 C 2 0 C 0 -5 C
+2 0 C 0 -6 C 2 0 C 0 -5 C 2 0 C 0 -4 C 1 0 C 0 -4 C 2 0 C 0 -4 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 2 0 C 0 1 C 2 0 C 0 1 C 1 0 C 0 1 C
+2 0 C 0 2 C 2 0 C 2 0 C 0 -3 C 2 0 C 0 -5 C 2 0 C 0 -7 C 1 0 C 0 -7 C 2 0 C 0 -6 C 2 0 C 0 -5 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C
+2 0 C 1 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -6 C 2 0 C 0 -20 C 1 0 C 0 -29 C 2 0 C 0 -26 C 2 0 C
+0 -25 C 2 0 C 0 -22 C 2 0 C 0 -19 C 2 0 C 0 -14 C 2 0 C 0 -6 C 1 0 C 0 8 C 2 0 C 0 7 C 2 0 C 0 8 C 2 0 C 0 10 C 2 0 C 0 8 C 2 0 C
+0 7 C 2 0 C 0 13 C 1 0 C 0 11 C 2 0 C 2 0 C 0 -8 C 2 0 C 0 -7 C 2 0 C 0 -9 C 2 0 C 0 -7 C 2 0 C 0 -11 C 1 0 C 0 -11 C 2 0 C 0 18 C
+2 0 C 0 31 C 2 0 C 0 25 C 2 0 C 0 39 C 2 0 C 0 23 C 2 0 C 0 28 C 1 0 C 0 23 C 2 0 C 0 11 C 2 0 C 0 20 C 2 0 C 0 9 C 2 0 C 0 16 C
+2 0 C 0 15 C 2 0 C 0 12 C 1 0 C 0 17 C 2 0 C 0 11 C 2 0 C 0 13 C 2 0 C 0 10 C 2 0 C 0 12 C 2 0 C 0 12 C 2 0 C 0 11 C 1 0 C 0 6 C
+2 0 C 0 8 C 2 0 C 0 5 C 2 0 C 0 8 C 2 0 C 0 7 C 2 0 C 0 5 C 2 0 C 0 2 C 1 0 C 0 12 C 2 0 C 0 3 C 2 0 C 0 9 C 2 0 C 0 1 C 2 0 C 0 1 C
+2 0 C 0 8 C 2 0 C 1 0 C 0 5 C 2 0 C 0 -3 C 2 0 C 0 2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 8 C 2 0 C 0 -10 C 1 0 C 0 -3 C 2 0 C 0 3 C
+2 0 C 0 -6 C 2 0 C 0 -8 C 2 0 C 0 -7 C 2 0 C 0 -9 C 2 0 C 0 -5 C 1 0 C 0 -22 C 2 0 C 0 -20 C 2 0 C 0 -27 C 2 0 C 0 -1 C 2 0 C 0 -3 C
+2 0 C 0 16 C 2 0 C 0 21 C 1 0 C 0 34 C 2 0 C 0 43 C 2 0 C 0 38 C 2 0 C 0 22 C 2 0 C 0 12 C 2 0 C 0 2 C 2 0 C 0 6 C 1 0 C 0 -5 C
+2 0 C 0 -23 C 2 0 C 0 -14 C 2 0 C 0 -29 C 2 0 C 0 -18 C 2 0 C 0 -11 C 2 0 C 0 10 C 1 0 C 0 10 C 2 0 C 0 27 C 2 0 C 0 40 C 2 0 C
+0 41 C 2 0 C 0 33 C 2 0 C 0 23 C 1 0 C 0 15 C 2 0 C 0 7 C 2 0 C 0 4 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 3 C 2 0 C 0 4 C 1 0 C 0 7 C
+2 0 C 0 8 C 2 0 C 0 8 C 2 0 C 0 10 C 2 0 C 0 9 C 2 0 C 0 9 C 2 0 C 0 7 C 1 0 C 0 5 C 2 0 C 0 6 C 2 0 C 0 6 C 2 0 C 0 8 C 2 0 C
+0 10 C 2 0 C 0 10 C 2 0 C 0 8 C 1 0 C 0 8 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 2 0 C 0 -1 C 1 0 C 0 1 C 2 0 C
+0 1 C 2 0 C 0 4 C 2 0 C 0 8 C 2 0 C 0 8 C 2 0 C 0 7 C 2 0 C 0 8 C 1 0 C 0 8 C 2 0 C 0 8 C 2 0 C 0 7 C 2 0 C 0 7 C 2 0 C 0 6 C 2 0 C
+0 7 C 2 0 C 0 6 C 1 0 C 0 6 C 2 0 C 0 6 C 2 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 6 C 1 0 C 0 1 C 2 0 C 0 1 C 2 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 0 2 C 1 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 1 0 C 0 1 C 2 0 C 2 0 C
+0 1 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -3 C 1 0 C 0 -4 C 2 0 C 0 -5 C 2 0 C 0 -6 C 2 0 C 0 -7 C 2 0 C 0 -6 C 2 0 C 0 -6 C
+2 0 C 0 -3 C 1 0 C 0 -3 C 2 0 C 2 0 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 2 C 1 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C
+0 2 C 2 0 C 0 3 C 2 0 C 0 8 C 2 0 C 0 13 C 1 0 C 0 18 C 2 0 C 0 21 C 2 0 C 0 20 C 2 0 C 0 -4 C 2 0 C 0 -13 C 2 0 C 0 -30 C 2 0 C
+0 -26 C 1 0 C 0 -26 C 2 0 C 0 13 C 2 0 C 0 34 C 2 0 C 0 23 C 2 0 C 0 39 C 2 0 C 0 34 C 1 0 C 0 39 C 2 0 C 0 34 C 2 0 C 0 34 C 2 0 C
+0 26 C 2 0 C 0 17 C 2 0 C 0 14 C 2 0 C 0 20 C 1 0 C 0 17 C 2 0 C 0 17 C 2 0 C 0 9 C 2 0 C 0 13 C 2 0 C 0 20 C 2 0 C 0 14 C 2 0 C
+0 26 C 1 0 C 0 28 C 2 0 C 0 12 C 2 0 C 0 21 C 2 0 C 0 10 C 2 0 C 0 12 C 2 0 C 0 15 C 2 0 C 0 5 C 1 0 C 0 15 C 2 0 C 0 9 C 2 0 C
+0 4 C 2 0 C 0 6 C 2 0 C 0 4 C 2 0 C 0 5 C 2 0 C 0 5 C 1 0 C 0 5 C 2 0 C 0 6 C 2 0 C 0 4 C 2 0 C 0 5 C 2 0 C 0 3 C 2 0 C 0 -4 C 2 0 C
+0 12 C 1 0 C 0 -4 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 -4 C 1 0 C 0 11 C 2 0 C 0 -6 C 2 0 C 0 -2 C 2 0 C
+0 -1 C 2 0 C 0 5 C 2 0 C 0 8 C 2 0 C 0 -13 C 1 0 C 0 5 C 2 0 C 0 2 C 2 0 C 0 -8 C 2 0 C 0 5 C 2 0 C 0 -6 C 2 0 C 0 3 C 2 0 C 0 -4 C
+1 0 C 0 -7 C 2 0 C 0 -7 C 2 0 C 0 -6 C 2 0 C 0 -12 C 2 0 C 0 -2 C 2 0 C 0 -27 C 2 0 C 0 -33 C 1 0 C 0 -28 C 2 0 C 0 -14 C 2 0 C
+0 30 C 2 0 C 0 39 C 2 0 C 0 69 C 2 0 C 0 53 C 2 0 C 0 49 C 1 0 C 0 30 C 2 0 C 0 11 C 2 0 C 0 10 C 2 0 C 0 4 C 2 0 C 0 1 C 2 0 C
+2 0 C 0 1 C 1 0 C 2 0 C 0 1 C 2 0 C 2 0 C 0 1 C 2 0 C 2 0 C 2 0 C 0 1 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 0 1 C 2 0 C 1 0 C 2 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C
+0 -2 C 1 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -4 C 2 0 C 0 -4 C 2 0 C 0 -3 C 1 0 C 0 -4 C 2 0 C 0 -4 C 2 0 C 0 -4 C 2 0 C
+0 -3 C 2 0 C 0 -4 C 2 0 C 0 -4 C 2 0 C 0 -4 C 1 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 2 0 C 0 -1 C
+1 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 -1 C 1 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C
+2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C
+1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 1 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C
+2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -3 C 1 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 -2 C
+2 0 C 0 -1 C 1 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 1 0 C 0 -1 C 2 0 C 0 -1 C
+2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 1 C 1 0 C 0 1 C 2 0 C 0 2 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C
+0 1 C 2 0 C 0 1 C 1 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -4 C 2 0 C 0 -6 C 2 0 C 0 -8 C 2 0 C 0 -8 C 2 0 C 0 -8 C 1 0 C 0 -8 C 2 0 C
+0 -8 C 2 0 C 0 -6 C 2 0 C 0 -7 C 2 0 C 0 -6 C 2 0 C 0 -6 C 2 0 C 0 -6 C 1 0 C 0 -6 C 2 0 C 0 -7 C 2 0 C 0 -6 C 2 0 C 0 -4 C 2 0 C
+0 -4 C 2 0 C 0 -3 C 2 0 C 0 -1 C 1 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 3 C 2 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 4 C 1 0 C 0 8 C
+2 0 C 0 9 C 2 0 C 0 8 C 2 0 C 0 8 C 2 0 C 0 8 C 2 0 C 0 4 C 1 0 C 0 1 C 2 0 C 2 0 C 0 -5 C 2 0 C 0 -5 C 2 0 C 0 -6 C 2 0 C 0 -5 C
+2 0 C 0 -6 C 1 0 C 0 -4 C 2 0 C 0 -4 C 2 0 C 0 -4 C 2 0 C 0 -2 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 1 C 1 0 C 0 2 C 2 0 C 2 0 C 0 -3 C
+2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 1 0 C 0 -5 C 2 0 C 0 -5 C 2 0 C 0 -5 C 2 0 C 0 -10 C 2 0 C 0 -12 C 2 0 C 0 -19 C
+2 0 C 0 -20 C 1 0 C 0 -27 C 2 0 C 0 -26 C 2 0 C 0 -27 C 2 0 C 0 -25 C 2 0 C 0 -26 C 2 0 C 0 -23 C 2 0 C 0 -20 C 1 0 C 0 -16 C 2 0 C
+0 -9 C 2 0 C 0 -4 C 2 0 C 2 0 C 0 5 C 2 0 C 0 4 C 2 0 C 0 5 C 1 0 C 0 4 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 2 0 C 0 -4 C 2 0 C 0 -5 C
+2 0 C 0 -4 C 1 0 C 0 -5 C 2 0 C 0 -5 C 2 0 C 0 -5 C 2 0 C 0 -10 C 2 0 C 0 -18 C 2 0 C 0 -29 C 2 0 C 0 -28 C 1 0 C 0 -13 C 2 0 C
+0 -2 C 2 0 C 0 2 C 2 0 C 0 -19 C 2 0 C 0 -133 C 2 0 C 0 -306 C 2 0 C 0 -242 C 1 0 C 0 251 C 2 0 C 0 420 C 2 0 C 0 133 C 2 0 C 0 79 C
+2 0 C 0 37 C 2 0 C 0 31 C 2 0 C 0 25 C 1 0 C 0 -78 C 2 0 C 0 -78 C 2 0 C 0 13 C 2 0 C 0 137 C 2 0 C 0 321 C 2 0 C 0 342 C 2 0 C
+0 130 C 1 0 C 0 29 C 2 0 C 0 46 C 2 0 C 0 64 C 2 0 C 0 29 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 2 C 1 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 2 C
+2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 1 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C
+1 0 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C
+0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 1 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 1 0 C
+0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -3 C 1 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C
+0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -4 C 1 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C
+0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C
+0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C
+0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 1 0 C 0 -3 C 2 0 C
+0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 1 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C
+0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -3 C 2 0 C 0 -4 C 2 0 C 0 -5 C 2 0 C 0 -5 C 2 0 C 0 -5 C 2 0 C 0 -3 C 2 0 C 0 -2 C 1 0 C
+0 -1 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -4 C 2 0 C 0 -3 C 1 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C
+0 -3 C 2 0 C 0 -4 C 2 0 C 0 -3 C 2 0 C 0 -3 C 1 0 C 0 -4 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -10 C 2 0 C 0 -50 C 2 0 C 0 -79 C 2 0 C
+0 -70 C 1 0 C 0 -64 C 2 0 C 0 -62 C 2 0 C 0 -65 C 2 0 C 0 -45 C 2 0 C 0 2 C 2 0 C 0 26 C 2 0 C 0 22 C 1 0 C 0 38 C 2 0 C 0 10 C
+2 0 C 0 27 C 2 0 C 0 12 C 2 0 C 0 23 C 2 0 C 0 18 C 1 0 C 0 4 C 2 0 C 0 8 C 2 0 C 0 6 C 2 0 C 0 -1 C 2 0 C 0 12 C 2 0 C 0 -4 C 2 0 C
+0 6 C 1 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 -1 C 2 0 C 0 1 C 2 0 C 0 4 C 2 0 C 0 -3 C 1 0 C 0 -2 C 2 0 C 0 3 C 2 0 C 0 -3 C
+2 0 C 0 -1 C 2 0 C 0 5 C 2 0 C 0 -8 C 2 0 C 0 -2 C 1 0 C 2 0 C 2 0 C 0 -4 C 2 0 C 0 2 C 2 0 C 0 -5 C 2 0 C 0 -1 C 2 0 C 0 -3 C 1 0 C
+0 -7 C 2 0 C 0 -7 C 2 0 C 0 8 C 2 0 C 0 -8 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 1 0 C 0 -4 C 2 0 C 0 -10 C 2 0 C 0 -4 C 2 0 C 0 -9 C
+2 0 C 0 -3 C 2 0 C 0 1 C 2 0 C 0 -12 C 1 0 C 0 -5 C 2 0 C 0 -6 C 2 0 C 0 -4 C 2 0 C 0 -4 C 2 0 C 0 -11 C 2 0 C 0 -10 C 2 0 C 0 -13 C
+1 0 C 0 -11 C 2 0 C 0 -5 C 2 0 C 0 -23 C 2 0 C 0 -10 C 2 0 C 0 -17 C 2 0 C 0 -22 C 2 0 C 0 -47 C 1 0 C 0 -52 C 2 0 C 0 -24 C 2 0 C
+0 -24 C 2 0 C 0 17 C 2 0 C 0 -34 C 2 0 C 0 -17 C 2 0 C 0 -5 C 1 0 C 0 21 C 2 0 C 0 6 C 2 0 C 0 -11 C 2 0 C 0 -24 C 2 0 C 0 -42 C
+2 0 C 0 -34 C 2 0 C 0 -39 C 1 0 C 0 -30 C 2 0 C 0 8 C 2 0 C 0 33 C 2 0 C 0 20 C 2 0 C 0 32 C 2 0 C 0 30 C 2 0 C 0 22 C 1 0 C 0 23 C
+2 0 C 0 26 C 2 0 C 0 10 C 2 0 C 0 16 C 2 0 C 2 0 C 0 8 C 2 0 C 0 7 C 1 0 C 0 9 C 2 0 C 0 2 C 2 0 C 0 -5 C 2 0 C 0 9 C 2 0 C 0 -6 C
+2 0 C 0 2 C 2 0 C 0 4 C 1 0 C 0 -4 C 2 0 C 0 5 C 2 0 C 0 -2 C 2 0 C 0 2 C 2 0 C 0 -8 C 2 0 C 0 2 C 2 0 C 0 4 C 1 0 C 0 -3 C 2 0 C
+0 -4 C 2 0 C 0 -4 C 2 0 C 0 -5 C 2 0 C 0 -32 C 2 0 C 0 -48 C 2 0 C 0 -77 C 1 0 C 0 -59 C 2 0 C 0 -57 C 2 0 C 0 -57 C 2 0 C 0 -45 C
+2 0 C 0 -64 C 2 0 C 0 -28 C 1 0 C 0 -56 C 2 0 C 0 -37 C 2 0 C 0 -9 C 2 0 C 0 11 C 2 0 C 0 48 C 2 0 C 0 17 C 2 0 C 0 24 C 1 0 C
+0 -28 C 2 0 C 0 -50 C 2 0 C 0 -30 C 2 0 C 0 -55 C 2 0 C 0 -35 C 2 0 C 0 -58 C 2 0 C 0 -54 C 1 0 C 0 -42 C 2 0 C 0 -46 C 2 0 C
+0 -52 C 2 0 C 0 -34 C 2 0 C 0 -44 C 2 0 C 0 -48 C 2 0 C 0 -77 C 1 0 C 0 -83 C 2 0 C 0 -44 C 2 0 C 0 -56 C 2 0 C 0 4 C 2 0 C 0 23 C
+2 0 C 0 67 C 2 0 C 0 80 C 1 0 C 0 60 C 2 0 C 0 75 C 2 0 C 0 75 C 2 0 C 0 100 C 2 0 C 0 96 C 2 0 C 0 84 C 2 0 C 0 67 C 1 0 C 0 31 C
+2 0 C 0 30 C 2 0 C 0 13 C 2 0 C 0 21 C 2 0 C 0 -2 C 2 0 C 0 -4 C 2 0 C 0 2 C 1 0 C 0 1 C 2 0 C 0 3 C 2 0 C 0 -3 C 2 0 C 2 0 C 0 -6 C
+2 0 C 0 -3 C 2 0 C 0 -1 C 1 0 C 0 -51 C 2 0 C 0 -34 C 2 0 C 0 -85 C 2 0 C 0 -55 C 2 0 C 0 -69 C 2 0 C 0 -61 C 2 0 C 0 -37 C 1 0 C
+0 -31 C 2 0 C 0 16 C 2 0 C 0 -9 C 2 0 C 0 8 C 2 0 C 0 4 C 2 0 C 0 -11 C 2 0 C 0 -12 C 1 0 C 0 -34 C 2 0 C 0 -27 C 2 0 C 0 -16 C
+2 0 C 0 -22 C 2 0 C 0 -23 C 2 0 C 0 -20 C 2 0 C 0 -35 C 1 0 C 0 -29 C 2 0 C 0 -29 C 2 0 C 0 -14 C 2 0 C 0 5 C 2 0 C 0 -3 C 2 0 C
+0 20 C 2 0 C 0 7 C 1 0 C 0 -18 C 2 0 C 0 -20 C 2 0 C 0 -36 C 2 0 C 0 21 C 2 0 C 0 -15 C 2 0 C 0 40 C 2 0 C 0 33 C 1 0 C 0 29 C 2 0 C
+0 47 C 2 0 C 0 32 C 2 0 C 0 49 C 2 0 C 0 40 C 2 0 C 0 28 C 2 0 C 0 48 C 1 0 C 0 31 C 2 0 C 0 45 C 2 0 C 0 40 C 2 0 C 0 33 C 2 0 C
+0 63 C 2 0 C 0 58 C 2 0 C 0 72 C 1 0 C 0 54 C 2 0 C 0 50 C 2 0 C 0 30 C 2 0 C 0 8 C 2 0 C 0 4 C 2 0 C 0 7 C 2 0 C 1 0 C 0 -4 C 2 0 C
+0 2 C 2 0 C 0 -13 C 2 0 C 0 6 C 2 0 C 0 -11 C 2 0 C 0 2 C 1 0 C 0 -6 C 2 0 C 0 -19 C 2 0 C 0 1 C 2 0 C 0 -3 C 2 0 C 0 -18 C 2 0 C
+0 -16 C 2 0 C 0 -11 C 1 0 C 0 -24 C 2 0 C 0 -1 C 2 0 C 0 -43 C 2 0 C 0 -45 C 2 0 C 0 -33 C 2 0 C 0 -19 C 2 0 C 0 -4 C 1 0 C 0 -6 C
+2 0 C 0 30 C 2 0 C 0 48 C 2 0 C 0 52 C 2 0 C 0 52 C 2 0 C 0 31 C 2 0 C 0 17 C 1 0 C 0 6 C 2 0 C 0 -7 C 2 0 C 0 -8 C 2 0 C 0 -18 C
+2 0 C 0 -10 C 2 0 C 0 -23 C 2 0 C 0 -33 C 1 0 C 0 -46 C 2 0 C 0 -41 C 2 0 C 0 -17 C 2 0 C 0 -11 C 2 0 C 0 10 C 2 0 C 0 15 C 2 0 C
+0 26 C 1 0 C 0 23 C 2 0 C 0 35 C 2 0 C 0 31 C 2 0 C 0 55 C 2 0 C 0 57 C 2 0 C 0 58 C 2 0 C 0 43 C 1 0 C 0 32 C 2 0 C 0 17 C 2 0 C
+0 8 C 2 0 C 0 2 C 2 0 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C
+2 0 C 1 0 C 0 -1 C 2 0 C 0 5 C 2 0 C 0 4 C 2 0 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 2 C 1 0 C 0 2 C 2 0 C 0 -11 C 2 0 C 0 8 C 2 0 C
+0 8 C 2 0 C 0 -6 C 2 0 C 0 3 C 2 0 C 0 3 C 1 0 C 2 0 C 0 -6 C 2 0 C 0 -2 C 2 0 C 0 -14 C 2 0 C 0 -8 C 2 0 C 0 -11 C 2 0 C 0 -6 C
+1 0 C 0 -9 C 2 0 C 0 1 C 2 0 C 0 -17 C 2 0 C 0 -11 C 2 0 C 0 -5 C 2 0 C 2 0 C 0 -3 C 1 0 C 0 -20 C 2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C
+0 -4 C 2 0 C 0 -4 C 2 0 C 0 -13 C 2 0 C 0 -3 C 1 0 C 0 -2 C 2 0 C 0 -4 C 2 0 C 0 -3 C 2 0 C 0 -5 C 2 0 C 0 -5 C 2 0 C 0 -9 C 2 0 C
+0 -9 C 1 0 C 0 -8 C 2 0 C 0 -13 C 2 0 C 0 -4 C 2 0 C 0 -4 C 2 0 C 0 1 C 2 0 C 0 7 C 2 0 C 0 8 C 1 0 C 0 3 C 2 0 C 2 0 C 0 12 C 2 0 C
+0 28 C 2 0 C 0 14 C 2 0 C 0 11 C 1 0 C 0 39 C 2 0 C 0 28 C 2 0 C 0 -2 C 2 0 C 0 -6 C 2 0 C 0 -5 C 2 0 C 0 -8 C 2 0 C 0 -7 C 1 0 C
+0 -2 C 2 0 C 0 8 C 2 0 C 0 7 C 2 0 C 0 5 C 2 0 C 0 3 C 2 0 C 0 9 C 2 0 C 0 10 C 1 0 C 0 23 C 2 0 C 0 47 C 2 0 C 0 43 C 2 0 C 0 2 C
+2 0 C 0 16 C 2 0 C 0 -8 C 2 0 C 0 19 C 1 0 C 0 -18 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C
+1 0 C 0 1 C 2 0 C 0 -3 C 2 0 C 0 1 C 2 0 C 0 -4 C 2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 1 C 1 0 C 0 -1 C 2 0 C 0 -9 C 2 0 C 0 -4 C 2 0 C
+0 -1 C 2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 1 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -6 C 2 0 C 0 -35 C 2 0 C 0 -42 C 2 0 C 0 -63 C
+1 0 C 0 -52 C 2 0 C 0 -47 C 2 0 C 0 -44 C 2 0 C 0 -43 C 2 0 C 0 -49 C 2 0 C 0 -33 C 2 0 C 0 -32 C 1 0 C 0 -30 C 2 0 C 0 3 C 2 0 C
+0 1 C 2 0 C 0 40 C 2 0 C 0 21 C 2 0 C 0 23 C 2 0 C 0 20 C 1 0 C 0 11 C 2 0 C 0 28 C 2 0 C 0 3 C 2 0 C 0 17 C 2 0 C 0 7 C 2 0 C 0 2 C
+2 0 C 0 14 C 1 0 C 0 -4 C 2 0 C 0 6 C 2 0 C 0 3 C 2 0 C 0 -2 C 2 0 C 0 4 C 2 0 C 0 -1 C 2 0 C 0 3 C 1 0 C 2 0 C 0 -3 C 2 0 C 0 3 C
+2 0 C 0 -4 C 2 0 C 0 1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 1 C 2 0 C 0 -4 C 2 0 C 0 -2 C 2 0 C 0 1 C 2 0 C 0 -4 C 2 0 C
+0 -1 C 1 0 C 0 -5 C 2 0 C 0 -2 C 2 0 C 0 1 C 2 0 C 0 -6 C 2 0 C 0 -4 C 2 0 C 0 -1 C 2 0 C 0 -6 C 1 0 C 0 2 C 2 0 C 0 -10 C 2 0 C
+0 -5 C 2 0 C 2 0 C 0 -4 C 2 0 C 0 2 C 2 0 C 0 -20 C 1 0 C 0 4 C 2 0 C 0 -12 C 2 0 C 0 -6 C 2 0 C 0 -2 C 2 0 C 0 -16 C 2 0 C 0 -6 C
+1 0 C 0 -7 C 2 0 C 0 -16 C 2 0 C 0 -11 C 2 0 C 0 -18 C 2 0 C 0 -8 C 2 0 C 0 -21 C 2 0 C 0 -29 C 1 0 C 0 -46 C 2 0 C 0 -32 C 2 0 C
+0 -12 C 2 0 C 0 -14 C 2 0 C 0 9 C 2 0 C 0 16 C 2 0 C 0 23 C 1 0 C 0 22 C 2 0 C 0 32 C 2 0 C 0 32 C 2 0 C 0 47 C 2 0 C 0 51 C 2 0 C
+0 53 C 2 0 C 0 39 C 1 0 C 0 28 C 2 0 C 0 14 C 2 0 C 0 7 C 2 0 C 0 3 C 2 0 C 0 -1 C 2 0 C 0 -3 C 2 0 C 0 -3 C 1 0 C 0 -2 C 2 0 C
+0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -3 C 1 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C
+0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 1 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 1 0 C
+0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 1 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C
+0 -3 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C
+0 -2 C 1 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C
+0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C
+0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C
+0 -2 C 1 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C
+0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C
+0 -2 C 2 0 C 0 -1 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C
+0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C
+0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -8 C 2 0 C 0 -32 C 2 0 C 0 -41 C 2 0 C 0 -32 C 2 0 C
+0 -36 C 1 0 C 0 -1 C 2 0 C 0 1 C 2 0 C 0 4 C 2 0 C 0 6 C 2 0 C 0 5 C 2 0 C 0 7 C 2 0 C 0 9 C 1 0 C 0 9 C 2 0 C 0 6 C 2 0 C 0 2 C
+2 0 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 2 C 1 0 C 2 0 C 0 -3 C 2 0 C 0 1 C 2 0 C 0 -2 C 2 0 C 0 2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C
+0 2 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 2 0 C 0 -2 C 2 0 C 1 0 C 0 -1 C 2 0 C 0 -3 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C
+0 -2 C 2 0 C 0 -2 C 2 0 C 0 2 C 1 0 C 0 -5 C 2 0 C 0 1 C 2 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 2 0 C 0 -5 C 2 0 C 1 0 C 0 -2 C 2 0 C 0 1 C
+2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C 2 0 C 0 -2 C 2 0 C 0 -4 C 1 0 C 0 -3 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -5 C 2 0 C
+0 2 C 2 0 C 0 -7 C 1 0 C 0 -4 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -7 C 2 0 C 0 -9 C 2 0 C 0 -5 C 1 0 C 0 -4 C 2 0 C
+0 -8 C 2 0 C 0 -4 C 2 0 C 0 -15 C 2 0 C 0 -17 C 2 0 C 0 -22 C 2 0 C 0 -11 C 1 0 C 0 1 C 2 0 C 0 20 C 2 0 C 0 29 C 2 0 C 0 30 C 2 0 C
+0 25 C 2 0 C 0 11 C 2 0 C 0 10 C 1 0 C 0 4 C 2 0 C 0 1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 1 0 C 0 -1 C 2 0 C
+0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C
+0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 1 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 1 0 C
+0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C
+0 -2 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C
+0 -2 C 1 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 1 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C
+0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C
+0 -2 C 2 0 C 0 -1 C 1 0 C 0 -2 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 1 0 C 0 -2 C 2 0 C
+0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 1 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C
+0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 1 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C
+0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 1 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C
+0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 1 0 C
+0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 1 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C
+0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 1 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C
+0 -1 C 1 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 1 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C
+0 -2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 1 0 C 0 -3 C 2 0 C 0 -18 C 2 0 C 0 -27 C 2 0 C 0 -25 C 2 0 C 0 -26 C
+2 0 C 0 -23 C 2 0 C 0 -22 C 1 0 C 0 -21 C 2 0 C 0 -23 C 2 0 C 0 -18 C 2 0 C 0 -15 C 2 0 C 0 -15 C 2 0 C 0 -15 C 2 0 C 0 -13 C 1 0 C
+0 -14 C 2 0 C 0 -11 C 2 0 C 0 -8 C 2 0 C 0 8 C 2 0 C 0 15 C 2 0 C 0 15 C 2 0 C 0 10 C 1 0 C 0 10 C 2 0 C 0 13 C 2 0 C 0 6 C 2 0 C
+0 9 C 2 0 C 0 10 C 2 0 C 0 2 C 2 0 C 0 2 C 1 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 4 C 2 0 C 2 0 C 0 1 C 2 0 C 0 1 C 2 0 C 0 1 C 1 0 C 2 0 C
+0 1 C 2 0 C 0 -1 C 2 0 C 0 1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 2 C 1 0 C 0 -2 C 2 0 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 2 0 C 0 -2 C
+2 0 C 0 2 C 1 0 C 0 -3 C 2 0 C 2 0 C 2 0 C 0 -4 C 2 0 C 2 0 C 0 -3 C 2 0 C 0 -5 C 1 0 C 2 0 C 2 0 C 0 -2 C 2 0 C 0 -7 C 2 0 C 0 -2 C
+2 0 C 2 0 C 0 -3 C 1 0 C 0 -5 C 2 0 C 0 -6 C 2 0 C 0 -5 C 2 0 C 0 -4 C 2 0 C 0 -9 C 2 0 C 0 -20 C 2 0 C 0 -29 C 1 0 C 0 -31 C 2 0 C
+0 -31 C 2 0 C 0 -38 C 2 0 C 0 -38 C 2 0 C 0 -34 C 2 0 C 0 -15 C 1 0 C 0 11 C 2 0 C 0 12 C 2 0 C 0 11 C 2 0 C 0 16 C 2 0 C 0 16 C
+2 0 C 0 10 C 2 0 C 0 5 C 1 0 C 0 -11 C 2 0 C 0 -1 C 2 0 C 0 -6 C 2 0 C 0 -2 C 2 0 C 0 6 C 2 0 C 0 17 C 2 0 C 0 43 C 1 0 C 0 24 C
+2 0 C 0 28 C 2 0 C 0 21 C 2 0 C 0 8 C 2 0 C 0 14 C 2 0 C 0 7 C 2 0 C 0 6 C 1 0 C 0 2 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 2 0 C 0 4 C
+2 0 C 0 2 C 2 0 C 0 -2 C 1 0 C 0 2 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 2 0 C 0 1 C 2 0 C 0 -2 C 2 0 C 0 2 C 1 0 C 0 -3 C 2 0 C 0 -2 C
+2 0 C 0 1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -4 C 1 0 C 0 4 C 2 0 C 0 -4 C 2 0 C 0 2 C 2 0 C 0 -6 C 2 0 C 0 -2 C 2 0 C
+0 -1 C 2 0 C 1 0 C 0 -2 C 2 0 C 0 -4 C 2 0 C 0 -3 C 2 0 C 0 2 C 2 0 C 0 -5 C 2 0 C 0 -1 C 2 0 C 0 -5 C 1 0 C 0 -2 C 2 0 C 0 -4 C
+2 0 C 0 -6 C 2 0 C 0 -5 C 2 0 C 0 -5 C 2 0 C 0 -6 C 2 0 C 0 -6 C 1 0 C 0 -18 C 2 0 C 0 -12 C 2 0 C 0 -16 C 2 0 C 0 -3 C 2 0 C 2 0 C
+2 0 C 0 13 C 1 0 C 0 21 C 2 0 C 0 19 C 2 0 C 0 14 C 2 0 C 0 14 C 2 0 C 0 2 C 2 0 C 0 2 C 2 0 C 0 -9 C 1 0 C 0 -14 C 2 0 C 0 -13 C
+2 0 C 0 -8 C 2 0 C 0 -1 C 2 0 C 0 6 C 2 0 C 0 8 C 2 0 C 0 21 C 1 0 C 0 21 C 2 0 C 0 23 C 2 0 C 0 14 C 2 0 C 0 12 C 2 0 C 0 6 C 2 0 C
+0 3 C 2 0 C 1 0 C 2 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -15 C 1 0 C 0 -21 C 2 0 C 0 -20 C 2 0 C
+0 -20 C 2 0 C 0 -19 C 2 0 C 0 -17 C 2 0 C 0 -17 C 2 0 C 0 -17 C 1 0 C 0 -14 C 2 0 C 0 -14 C 2 0 C 0 -9 C 2 0 C 0 1 C 2 0 C 0 4 C
+2 0 C 0 5 C 1 0 C 0 -6 C 2 0 C 0 -16 C 2 0 C 0 -10 C 2 0 C 0 -13 C 2 0 C 0 -6 C 2 0 C 0 -12 C 2 0 C 0 -17 C 1 0 C 0 -6 C 2 0 C
+0 -14 C 2 0 C 0 -5 C 2 0 C 0 -9 C 2 0 C 0 -11 C 2 0 C 0 -4 C 2 0 C 0 -12 C 1 0 C 0 -6 C 2 0 C 0 5 C 2 0 C 0 11 C 2 0 C 0 12 C 2 0 C
+0 9 C 2 0 C 0 7 C 2 0 C 0 -10 C 1 0 C 0 -13 C 2 0 C 0 -8 C 2 0 C 0 -15 C 2 0 C 0 -7 C 2 0 C 0 -15 C 2 0 C 0 -3 C 2 0 C 0 6 C 1 0 C
+0 10 C 2 0 C 0 8 C 2 0 C 0 9 C 2 0 C 0 7 C 2 0 C 0 5 C 2 0 C 0 8 C 2 0 C 0 5 C 1 0 C 0 2 C 2 0 C 0 5 C 2 0 C 2 0 C 0 3 C 2 0 C
+0 -3 C 2 0 C 0 2 C 2 0 C 0 -1 C 1 0 C 0 3 C 2 0 C 0 -1 C 2 0 C 0 -5 C 2 0 C 0 1 C 2 0 C 2 0 C 0 -6 C 2 0 C 0 4 C 1 0 C 0 -9 C 2 0 C
+2 0 C 0 1 C 2 0 C 0 -9 C 2 0 C 0 -5 C 2 0 C 0 -6 C 2 0 C 0 -4 C 1 0 C 0 -7 C 2 0 C 0 -19 C 2 0 C 0 -9 C 2 0 C 0 -19 C 2 0 C 0 -6 C
+2 0 C 0 -1 C 2 0 C 0 -2 C 1 0 C 0 7 C 2 0 C 0 3 C 2 0 C 0 5 C 2 0 C 0 10 C 2 0 C 0 6 C 2 0 C 0 12 C 2 0 C 0 20 C 1 0 C 0 7 C 2 0 C
+0 -2 C 2 0 C 0 -5 C 2 0 C 0 -2 C 2 0 C 0 -1 C 2 0 C 0 -9 C 2 0 C 0 -9 C 1 0 C 0 -19 C 2 0 C 0 -10 C 2 0 C 0 -8 C 2 0 C 0 -7 C 2 0 C
+0 -4 C 2 0 C 0 -9 C 2 0 C 0 -1 C 1 0 C 2 0 C 0 -4 C 2 0 C 0 9 C 2 0 C 0 8 C 2 0 C 0 10 C 2 0 C 0 16 C 2 0 C 0 7 C 1 0 C 0 -5 C 2 0 C
+0 -18 C 2 0 C 0 -16 C 2 0 C 0 -9 C 2 0 C 0 -3 C 2 0 C 0 1 C 2 0 C 0 8 C 1 0 C 0 25 C 2 0 C 0 28 C 2 0 C 0 22 C 2 0 C 0 21 C 2 0 C
+0 12 C 2 0 C 0 11 C 2 0 C 0 6 C 1 0 C 0 7 C 2 0 C 0 3 C 2 0 C 0 -15 C 2 0 C 0 -13 C 2 0 C 0 -14 C 2 0 C 0 -19 C 1 0 C 0 -9 C 2 0 C
+0 -15 C 2 0 C 0 -11 C 2 0 C 0 -14 C 2 0 C 0 -8 C 2 0 C 0 -11 C 2 0 C 0 -6 C 1 0 C 0 -11 C 2 0 C 0 -6 C 2 0 C 0 -9 C 2 0 C 0 -10 C
+2 0 C 0 5 C 2 0 C 0 5 C 2 0 C 0 12 C 1 0 C 0 10 C 2 0 C 0 4 C 2 0 C 0 9 C 2 0 C 0 3 C 2 0 C 0 10 C 2 0 C 2 0 C 0 5 C 1 0 C 0 6 C
+2 0 C 0 -6 C 2 0 C 0 4 C 2 0 C 0 -2 C 2 0 C 0 1 C 2 0 C 2 0 C 0 -4 C 1 0 C 0 -1 C 2 0 C 0 -2 C 2 0 C 0 -3 C 2 0 C 0 -3 C 2 0 C
+0 -5 C 2 0 C 0 -2 C 2 0 C 0 -10 C 1 0 C 0 -13 C 2 0 C 0 -8 C 2 0 C 0 -15 C 2 0 C 0 -8 C 2 0 C 0 -6 C 2 0 C 0 -8 C 2 0 C 0 -6 C 1 0 C
+0 -16 C 2 0 C 0 -7 C 2 0 C 0 -10 C 2 0 C 0 -4 C 2 0 C 0 -1 C 2 0 C 0 -13 C 2 0 C 0 5 C 1 0 C 2 0 C 0 7 C 2 0 C 0 -4 C 2 0 C 0 -8 C
+2 0 C 0 -8 C 2 0 C 0 -10 C 2 0 C 0 -3 C 1 0 C 0 -2 C 2 0 C 0 5 C 2 0 C 0 4 C 2 0 C 0 13 C 2 0 C 0 6 C 2 0 C 0 2 C 2 0 C 0 -4 C 1 0 C
+0 -8 C 2 0 C 0 -7 C 2 0 C 0 -9 C 2 0 C 0 -16 C 2 0 C 0 -17 C 2 0 C 0 -20 C 2 0 C 0 -10 C 1 0 C 0 -14 C 2 0 C 0 -5 C 2 0 C 0 -1 C
+2 0 C 0 -2 C 2 0 C 0 3 C 2 0 C 0 2 C 2 0 C 0 1 C 1 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 4 C 2 0 C 0 6 C 2 0 C 0 4 C 2 0 C 0 12 C 2 0 C
+0 11 C 1 0 C 0 13 C 2 0 C 0 7 C 2 0 C 0 3 C 2 0 C 0 1 C 2 0 C 0 -3 C 2 0 C 0 -4 C 2 0 C 0 -5 C 1 0 C 0 -7 C 2 0 C 0 -3 C 2 0 C
+0 -7 C 2 0 C 0 -7 C 2 0 C 0 -5 C 2 0 C 0 -6 C 2 0 C 0 -4 C 1 0 C 0 -10 C 2 0 C 0 -4 C 2 0 C 0 -7 C 2 0 C 0 -6 C 2 0 C 0 -7 C 2 0 C
+0 -8 C 2 0 C 0 -6 C 1 0 C 0 -9 C 2 0 C 0 -8 C 2 0 C 0 -10 C 2 0 C 0 -8 C 2 0 C 0 -11 C 2 0 C 0 -10 C 1 0 C 0 -16 C 2 0 C 0 -16 C
+2 0 C 0 -16 C 2 0 C 0 -14 C 2 0 C 0 -9 C 2 0 C 0 -5 C 2 0 C 0 -3 C 1 0 C 0 -1 C 2 0 C 0 -1 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C
+2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C
+2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C
+1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C
+2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C
+2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C
+1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C
+2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C
+2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C
+1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C
+2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C
+2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C
+2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C
+1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C
+2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C
+2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C
+2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 1 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C 2 0 C
+PGPLOT restore showpage
+%%PageTrailer
+%%PageBoundingBox: 52 11 313 736
+
+%%Trailer
+%%BoundingBox: 52 11 313 736
+%%DocumentFonts: Helvetica
+%%Pages: 1
+%%EOF

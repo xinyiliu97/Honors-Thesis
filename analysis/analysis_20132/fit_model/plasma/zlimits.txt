@@ -1,0 +1,2 @@
+BlueMax BlueMin RedMax RedMin
+0.006691 0.007311 0.050336 0.051208

@@ -1,0 +1,111 @@
+redshift(1) * redshift(2) * sigma(1) * sigma(2) * wabs(1) * ( rest_wave(1) * rest_wave(2)* rest_wave(3) * rest_wave(4) * rest_wave(5) * rest_wave(6) * rest_wave(7) * rest_wave(8) * rest_wave(9) * rest_wave(10) * rest_wave(11) * rest_wave(12) * rest_wave(13) * rest_wave(14) * rest_wave(15) * rest_wave(16) * rest_wave(17))*( powerlaw(1) + gauss(1) + gauss(2) + gauss(3) + gauss(4) + gauss(5) + gauss(6) + gauss(7) + gauss(8) + gauss(9) + gauss(10) + gauss(11) + gauss(12) + gauss(13) + gauss(14) + gauss(15) + gauss(16) + gauss(17))
+ idx  param             tie-to  freeze         value         min         max
+  1  redshift(1).z          0     0       0.03520134       0.015       0.055  
+  2  redshift(2).z          0     0       0.08195751        0.04        0.12  
+  3  sigma(1).beta          0     0      0.003607333      0.0015        0.01  
+  4  sigma(2).beta          0     0      0.007383844      0.0015        0.01  
+  5  wabs(1).nH             0     0        0.4616874           0      100000  10^22
+  6  rest_wave(1).lambda    0     1           6.1823           0           0  
+  7  rest_wave(2).lambda    0     1           8.4211           0           0  
+  8  rest_wave(3).lambda    0     1          6.64795           0           0  
+  9  rest_wave(4).lambda    0     1          6.68659           0           0  
+ 10  rest_wave(5).lambda    0     1          6.74029           0           0  
+ 11  rest_wave(6).lambda    0     1           5.0553           0           0  
+ 12  rest_wave(7).lambda    0     1            1.592           0           0  
+ 13  rest_wave(8).lambda    0     1           1.8545           0           0  
+ 14  rest_wave(9).lambda    0     1           1.7799           0           0  
+ 15  rest_wave(10).lambda   0     1           9.1688           0           0  
+ 16  rest_wave(11).lambda   0     1           9.2297           0           0  
+ 17  rest_wave(12).lambda   0     1           9.3143           0           0  
+ 18  rest_wave(13).lambda   0     1             4.73           0           0  
+ 19  rest_wave(14).lambda   0     1          6.64795           0           0  
+ 20  rest_wave(15).lambda   0     1          6.68659           0           0  
+ 21  rest_wave(16).lambda   0     1          6.74029           0           0  
+ 22  rest_wave(17).lambda   0     1           6.1823           0           0  
+ 23  powerlaw(1).norm       0     0       0.01332384           0       1e+10  
+ 24  powerlaw(1).PhoIndex   0     0          1.27364          -2           9  
+ 25  gauss(1).area          0     0     0.0002070489  6.211466e-05  0.0006211466  photons/s/cm^2
+ 26  gauss(1).center        0     1         6.399925           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(1).lambda
+ 27  gauss(1).sigma         0     1       0.02308666       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(1).lambda*sigma(1).beta
+ 28  gauss(2).area          0     0     0.0001000855  3.002566e-05  0.0003002566  photons/s/cm^2
+ 29  gauss(2).center        0     1         8.717534           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(2).lambda
+ 30  gauss(2).sigma         0     1       0.03144704       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(2).lambda*sigma(1).beta
+ 31  gauss(3).area          0     0     8.627773e-05  2.588332e-05  0.0002588332  photons/s/cm^2
+ 32  gauss(3).center        0     1         6.881967           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(3).lambda
+ 33  gauss(3).sigma         0     1       0.02482554       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(3).lambda*sigma(1).beta
+ 34  gauss(4).area          0     0     1.152241e-05  3.456724e-06  3.456724e-05  photons/s/cm^2
+ 35  gauss(4).center        0     1         6.921967           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(4).lambda
+ 36  gauss(4).sigma         0     1       0.02496984       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(4).lambda*sigma(1).beta
+ 37  gauss(5).area          0     0     5.171783e-05  1.551535e-05  0.0001551535  photons/s/cm^2
+ 38  gauss(5).center        0     1         6.977557           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(5).lambda
+ 39  gauss(5).sigma         0     1       0.02517037       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(5).lambda*sigma(1).beta
+ 40  gauss(6).area          0     0      9.58045e-05  2.874135e-05  0.0002874135  photons/s/cm^2
+ 41  gauss(6).center        0     1         5.233253           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(6).lambda
+ 42  gauss(6).sigma         0     1       0.01887809       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(6).lambda*sigma(1).beta
+ 43  gauss(7).area          0     0     0.0002351623  7.054868e-05  0.0007054868  photons/s/cm^2
+ 44  gauss(7).center        0     1         1.648041           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(7).lambda
+ 45  gauss(7).sigma         0     1       0.01216887       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(7).lambda*sigma(2).beta
+ 46  gauss(8).area          0     0     0.0008648527  0.0002594558  0.002594558  photons/s/cm^2
+ 47  gauss(8).center        0     1         1.919781           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(8).lambda
+ 48  gauss(8).sigma         0     1       0.01417536       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(8).lambda*sigma(2).beta
+ 49  gauss(9).area          0     0     0.0002411321  7.233963e-05  0.0007233963  photons/s/cm^2
+ 50  gauss(9).center        0     1         1.842555           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(9).lambda
+ 51  gauss(9).sigma         0     1       0.01360514       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(9).lambda*sigma(2).beta
+ 52  gauss(10).area         0     0      1.03089e-05  3.092669e-06  3.092669e-05  photons/s/cm^2
+ 53  gauss(10).center       0     1         9.491554           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(10).lambda
+ 54  gauss(10).sigma        0     1       0.03423919       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(10).lambda*sigma(1).beta
+ 55  gauss(11).area         0     0      1.72097e-06  5.16291e-07  5.16291e-06  photons/s/cm^2
+ 56  gauss(11).center       0     1         9.554598           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(11).lambda
+ 57  gauss(11).sigma        0     1       0.03446661       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(11).lambda*sigma(1).beta
+ 58  gauss(12).area         0     0     2.629751e-05  7.889254e-06  7.889254e-05  photons/s/cm^2
+ 59  gauss(12).center       0     1         9.642176           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(12).lambda
+ 60  gauss(12).sigma        0     1       0.03478253       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(12).lambda*sigma(1).beta
+ 61  gauss(13).area         0     0      0.000133225  3.99675e-05  0.000399675  photons/s/cm^2
+ 62  gauss(13).center       0     1         4.896502           0          40  A
+#=>  (1+redshift(1).z)*rest_wave(13).lambda
+ 63  gauss(13).sigma        0     1       0.01766331       1e-06           1  A
+#=>  (1+redshift(1).z)*rest_wave(13).lambda*sigma(1).beta
+ 64  gauss(14).area         0     0     7.940613e-06  2.382184e-06  2.382184e-05  photons/s/cm^2
+ 65  gauss(14).center       0     1         7.192799           0          40  A
+#=>  (1+redshift(2).z)*rest_wave(14).lambda
+ 66  gauss(14).sigma        0     1       0.05311051       1e-06           1  A
+#=>  (1+redshift(2).z)*rest_wave(14).lambda*sigma(2).beta
+ 67  gauss(15).area         0     0    -9.189729e-05  -0.0002756919  0.0001837946  photons/s/cm^2
+ 68  gauss(15).center       0     1         7.234606           0          40  A
+#=>  (1+redshift(2).z)*rest_wave(15).lambda
+ 69  gauss(15).sigma        0     1        0.0534192       1e-06           1  A
+#=>  (1+redshift(2).z)*rest_wave(15).lambda*sigma(2).beta
+ 70  gauss(16).area         0     0     8.310432e-05  2.49313e-05  0.000249313  photons/s/cm^2
+ 71  gauss(16).center       0     1         7.292707           0          40  A
+#=>  (1+redshift(2).z)*rest_wave(16).lambda
+ 72  gauss(16).sigma        0     1       0.05384821       1e-06           1  A
+#=>  (1+redshift(2).z)*rest_wave(16).lambda*sigma(2).beta
+ 73  gauss(17).area         0     0     8.607529e-05  2.582259e-05  0.0002582259  photons/s/cm^2
+ 74  gauss(17).center       0     1         6.688986           0          40  A
+#=>  (1+redshift(2).z)*rest_wave(17).lambda
+ 75  gauss(17).sigma        0     1       0.04939043       1e-06           1  A
+#=>  (1+redshift(2).z)*rest_wave(17).lambda*sigma(2).beta

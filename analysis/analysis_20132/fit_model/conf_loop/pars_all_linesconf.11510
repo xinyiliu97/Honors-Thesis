@@ -1,0 +1,56 @@
+
+redshift(1) * redshift(2) * sigma(1) * sigma(2) * wabs(1) * ( rest_wave(1) * rest_wave(2) * rest_wave(3) * rest_wave(4) * rest_wave(5) * rest_wave(6) * rest_wave(7) * rest_wave(8) * rest_wave(9) *  rest_wave(10) * rest_wave(11) * rest_wave(12) * rest_wave(13) * rest_wave(14)) * ( powerlaw(1) + gauss(1) + gauss(2) + gauss(3) + gauss(4) +  gauss(5) + gauss(6) + gauss(7) + gauss(8) + gauss(9) + gauss(10) + gauss(11) + gauss(12) + gauss(13) + gauss(14))
+
+TRIES   PAR#      P_VALUE        P_MIN        P_MAX  TIME 
+
+ chi^2 = 2.1618e+03,  DoF =  1653, time = Thu Oct 18 20:45:09 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1618e+03,  DoF =  1653, time = Thu Oct 18 20:48:48 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1617e+03,  DoF =  1653, time = Thu Oct 18 20:51:47 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1617e+03,  DoF =  1653, time = Thu Oct 18 20:55:44 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Thu Oct 18 20:57:50 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Thu Oct 18 21:00:43 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Thu Oct 18 21:03:36 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Thu Oct 18 21:05:46 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Thu Oct 18 21:07:35 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Thu Oct 18 21:09:43 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Thu Oct 18 21:12:27 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Thu Oct 18 21:13:42 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Thu Oct 18 21:15:52 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Thu Oct 18 21:18:08 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Thu Oct 18 21:20:11 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Thu Oct 18 21:21:12 2018  (conf_loop/pars_all_linespar.11510)
+ 
+
+ chi^2 = 2.1616e+03,  DoF =  1653, time = Thu Oct 18 21:22:42 2018  (conf_loop/pars_all_linespar.11510)
+ 
+    1      1   5.0000e-03   4.9500e-03   5.0000e-03  Thu Oct 18 21:25:26 2018

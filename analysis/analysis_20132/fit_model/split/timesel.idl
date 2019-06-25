@@ -1,0 +1,33 @@
+; routine for writing a script to split evt1 files into 7 parts
+nparts = 7
+filename = 'secondary/acisf15781_000N001_evt1.fits'
+
+; read file to get start and stop times
+d = mrdfits( 'secondary/acisf15781_000N001_evt1.fits', 0, hdr)
+t1 = sxpar(hdr, 'TSTART')
+t2 = sxpar(hdr, 'TSTOP')
+
+; compute exposure per split
+deltat = (t2-t1)/double(nparts)
+
+print, 'Delta T:', deltat
+; Delta T:       20340.394
+
+; Make up intervals
+tstart = findgen(nparts)*deltat + t1
+tend = (findgen(nparts)+1)*deltat + t1
+
+; turn intervals into strings
+str_start = strarr(nparts)
+str_end = strarr(nparts)
+
+for i=0,nparts-1 do str_start[i] = string(tstart[i], format='(d12.2)')
+for i=0,nparts-1 do str_end[i] = string(tend[i], format='(d12.2)')
+
+; format a script for making the new files
+
+for i=0,nparts-1 do begin & $
+	s = string(i, format='(i1)') & $
+	print, 'dmcopy ' + '"' + filename + '[time='+str_start[i]+':'+str_end[i] + $
+		']" part'+s+'_evt1.fits opt=all' & $
+endfor
