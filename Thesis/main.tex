@@ -1,0 +1,223 @@
+% Please compile this file using LuaLatex
+%\documentclass[12pt,preprint]{aastex} 
+\documentclass[12pt, oneside]{book}
+
+    
+%% Sets page size, margins and spacing
+\usepackage[top=2.54cm,bottom=2.54cm,left=3.81cm,right=2.54cm,marginparwidth=1.75cm]{geometry}
+\usepackage{setspace,caption}
+% line spacing
+\linespread{1.67}
+\selectfont
+% reduce item separation
+\usepackage{enumitem}
+\setlist[1]{itemsep=-5px}
+\usepackage{listings}
+\usepackage{titling}
+% date time
+\usepackage{datetime}
+\newdateformat{monthyeardate}{\monthname[\THEMONTH], \THEYEAR}
+
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}	% Para caracteres en español
+\usepackage{csquotes}
+\usepackage[T1]{fontenc}
+\usepackage{romannum}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{multirow,booktabs}
+\usepackage[]{xcolor}
+\usepackage{deluxetable}
+\usepackage{fullpage}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{ textcomp }
+\usepackage{ gensymb }
+
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{calc}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage[retainorgcmds]{IEEEtrantools}
+%\geometry{margin=1in, headsep=0.25in}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage[final]{pdfpages}
+
+\newlength{\tabcont}
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\usepackage{empheq}
+\usepackage{framed}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+
+
+\usepackage[round]{natbib}
+\setcitestyle{aysep={}} 
+\bibliographystyle{plainnat}
+\colorlet{shadecolor}{orange!15}
+\parindent 0in
+\parskip 12pt
+\geometry{headsep=0.25in}
+%\doublespacing
+% Use index
+\usepackage{makeidx}
+\makeindex
+
+\newcommand{\dtoprule}{\specialrule{1pt}{0pt}{0.4pt}\specialrule{0.3pt}{0pt}{\belowrulesep}}
+\newcommand{\dbottomrule}{\specialrule{0.3pt}{0pt}{0.4pt}\specialrule{1pt}{0pt}{\belowrulesep}}
+\newcommand{\rncaps}[1]{\MakeUppercase{\romannumeral #1}}
+
+% \documentclass[12pt, oneside]{book}
+% \newcommand{\RomanNumeralCaps}[1]
+%     {\MakeUppercase{\romannumeral #1}}
+
+% %% Language and font encodings
+% \usepackage[english]{babel}
+% \usepackage{csquotes}
+% \usepackage[T1]{fontenc}
+% \usepackage{romannum}
+
+% %% Sets page size, margins and spacing
+% \usepackage[top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+% \usepackage{setspace,caption}
+% % line spacing
+% \linespread{1.5}
+% \selectfont
+% % reduce item separation
+% \usepackage{enumitem}
+% \setlist[1]{itemsep=-5px}
+% % set the bibliography
+% \usepackage[style=numeric-comp]{biblatex}
+% \addbibresource{bib_file/bibliography.bib}
+% \usepackage{listings}
+
+% %% Useful packages
+% \usepackage{xparse} % define commands
+% \usepackage{amsmath}
+% \usepackage{amsthm}
+% \usepackage{mathtools}
+% \usepackage{amssymb}
+% \usepackage{graphicx}
+% \usepackage[colorinlistoftodos]{todonotes}
+% \usepackage[colorlinks=true, allcolors=black]{hyperref}
+% \usepackage{multirow}
+
+
+% %% Additional Packages
+% % for graphics
+% \usepackage{tikz}
+% % Use index
+% \usepackage{makeidx}
+% \makeindex
+% % Use sub figure
+% \usepackage{caption}
+% \usepackage[justification=centering, position=bottom]{subcaption}
+% % better reference
+% \usepackage[capitalise]{cleveref}
+% % Add bibliography to table of contents
+% \usepackage[nottoc,numbib]{tocbibind}
+% % to reference title
+% \usepackage{titling}
+% % date time
+% \usepackage{datetime}
+% \newdateformat{monthyeardate}{\monthname[\THEMONTH], \THEYEAR}
+% %\usepackage[showframe=true]{geometry}
+
+% %% Define theorem environments
+% \newtheorem{definition}{Definition}[chapter]
+% \newtheorem{theorem}{Theorem}[chapter]
+% \newtheorem{lemma}[theorem]{Lemma}
+% \newtheorem{corollary}[theorem]{Corollary}
+% \newtheorem{example}{Example}[chapter]
+
+% %% Define useful functions
+% % \keyword function is used for crucial words,
+% % you can both highlight and index that word.
+% % Typically used in definitions.
+% \NewDocumentCommand\keyword{mo}{%'mo' means #1 is 'm'andatory and #2 is 'o'ptional
+%   \IfNoValueTF{#2}%
+%   {{\boldmath\textbf{#1}}\index{\MakeLowercase{#1}}}%
+%   {{\boldmath\textbf{#1}}\index{\MakeLowercase{#2}}}%
+% }
+
+% %% Define the set notation
+% \DeclarePairedDelimiter\set\{\}  %chktex 21
+
+\title{Using Eclipses to Probe Physical Conditions along the Jet in SS433 }
+\author{Xinyi Liu}
+
+\begin{document}
+  %%% Preface
+  % The title page
+  \begin{titlepage}
+    \thispagestyle{empty}
+    \doublespacing\centering
+
+    \vfill
+    \LARGE \textbf{\thetitle{}} \\
+    \large BY \\
+    \textbf{\theauthor{}} \\
+
+    \vfill
+    A Study \\
+    Presented to the Faculty \\
+    of \\
+    Wheaton College \\
+    in Partial Fulfillment of the Requirements \\
+    for \\
+    Graduation with Departmental Honors \\
+    in Physics and Astronomy \\
+    Norton, Massachusetts \\
+    \monthyeardate\today
+
+    \vfill
+  \end{titlepage}
+
+  \frontmatter
+  \include{Chapters/Abstract}
+  \include{Chapters/Acknowledgement}
+  
+  % The toc
+  \tableofcontents{}
+  \mainmatter  % chktex 1
+  %%% The chapters
+  %\include{Chapters/Notes}
+  \include{Chapters/Chapter1}
+  \include{Chapters/Chapter2}
+  \include{Chapters/Chapter3}
+  \include{Chapters/Chapter4}
+  \include{Chapters/Chapter5}
+  \include{Chapters/Chapter6}
+  \include{Appendix}
+  
+  %\include{Chapters/}
+  %\include{Chapters/further-problem}
+
+
+
+  %%% Post face
+  % figure menu
+  \clearpage{}\label{chap: list of figure}
+  \listoffigures
+  
+  % bibliography
+  \bibliography{bib_file/bibliography}
+  %\printbibliography
+  % index page
+  \clearpage{}\label{chap: index}
+  \printindex
+  
+
+  
+  
+
+\end{document}
