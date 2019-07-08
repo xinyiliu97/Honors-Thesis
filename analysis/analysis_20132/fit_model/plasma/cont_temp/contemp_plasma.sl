@@ -7,7 +7,7 @@ require("add_orders");
 
 print("Starting");
 % read data
-variable pdir = "/home/xliu/20131/parts/part0/";
+variable pdir = "/home/xliu/20132/";
 
 mp1 = load_data(pdir+"meg_1.pha");
 mm1 = load_data(pdir+"meg_-1.pha");
@@ -68,13 +68,13 @@ list_par;
 %set_par("plaw_dem2(1).metal_abund", 2.819, 0, 0.1, 15);
 
 %save_par("aped_conT_manual.txt");
-load_par("aped_contT_manual.txt");
+load_par("aped_contT_both_manual.txt");
 list_par;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 set_fit_method("subplex");
 set_fit_statistic("cash");
 () = fit_counts(;fit_verbose=1);
-save_par("aped_contT_both_fitted_par2.txt");
+save_par("aped_contT_both_fitted_par1.txt");
 
 %set_fit_statistic("cash");
 %() = fit_counts(;fit_verbose=1);
@@ -99,7 +99,7 @@ print("Hello");
 
 % prepare a plot
 variable device, id;
-device = "plasma_cont_both_part0_2.ps/cps";
+device = "plasma_cont_both1.ps/cps";
 id = open_plot(device, 1,2);
 
 print("Hello Hello");

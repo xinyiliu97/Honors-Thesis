@@ -1,0 +1,26 @@
+wabs(1) * plaw_dem2(1)
+ idx  param                 tie-to  freeze         value         min         max
+  1  wabs(1).nH                 0     0        0.6659925           0          10  10^22
+  2  plaw_dem2(1).norm          0     0       0.06450192      0.0001        0.07  
+  3  plaw_dem2(1).gamma         0     0        0.7569406           0          20  
+  4  plaw_dem2(1).LogTmin       0     1              6.5           6         8.5  
+  5  plaw_dem2(1).LogTmax       0     1              8.5         6.1         8.5  
+  6  plaw_dem2(1).density       0     1            1e+14           0           0  
+  7  plaw_dem2(1).vturb         0     0         1522.598         500        4000  
+  8  plaw_dem2(1).redshift      0     0       0.03624302       -0.02        0.05  
+  9  plaw_dem2(1).metal_abund   0     0         10.67959         0.1          15  
+ 10  plaw_dem2(1).abund_He      0     1                1           0          10  
+ 11  plaw_dem2(1).abund_C       0     1                1           0          10  
+ 12  plaw_dem2(1).abund_N       0     1                1           0          10  
+ 13  plaw_dem2(1).abund_O       0     1                1           0          10  
+ 14  plaw_dem2(1).abund_Ne      0     1                1           0          10  
+ 15  plaw_dem2(1).abund_Na      0     1                1           0          10  
+ 16  plaw_dem2(1).abund_Mg      0     1                1           0          10  
+ 17  plaw_dem2(1).abund_Al      0     1                1           0          10  
+ 18  plaw_dem2(1).abund_Si      0     0         2.885073           0          10  
+ 19  plaw_dem2(1).abund_S       0     0         3.863307           0          10  
+ 20  plaw_dem2(1).abund_Ar      0     1                1           0          10  
+ 21  plaw_dem2(1).abund_K       0     1                1           0          10  
+ 22  plaw_dem2(1).abund_Ca      0     1                1           0          10  
+ 23  plaw_dem2(1).abund_Fe      0     0         2.853145           0         100  
+ 24  plaw_dem2(1).abund_Ni      0     0         12.76305           0         100  
